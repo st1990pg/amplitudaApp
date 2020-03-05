@@ -21,6 +21,11 @@ $accent-color: #06aaca;
       color: $accent-color;
       border: 1px solid $accent-color;
     }
+
+    &.gray{
+      color:#8b92ab;
+      border: 2px solid #8b92ab;
+    }
   }
 
   &:hover, &:focus {
