@@ -10,8 +10,10 @@
   "author": "Stefan",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "reactstrap": "^8.4.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
