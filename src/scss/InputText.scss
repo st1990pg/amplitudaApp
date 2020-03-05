@@ -1,7 +1,7 @@
 $dark-gray: rgba(139, 146, 171, 0.50);
 $light-gray: #8b92ab;
 
-.InputText{
+.InputText {
   font-family: Muli, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -11,21 +11,23 @@ $light-gray: #8b92ab;
   padding: 5px;
   width: 100%;
 
-  input{
+  input {
     flex: 1;
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
     border: none;
     text-align: right;
-    &:focus, &:hover{
+
+    &:focus, &:hover {
       outline: none;
     }
   }
 
-  label{
-    color:$dark-gray;
+  label {
+    color: $dark-gray;
     font-weight: normal;
   }
+
   border-bottom: $light-gray 1px solid;
 }
