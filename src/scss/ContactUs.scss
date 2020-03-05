@@ -1,0 +1,31 @@
+.ContactUs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .form{
+    flex: 1;
+    margin: 140px;
+  }
+
+  .address{
+    flex: 1;
+    margin: 140px;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  h1{
+    font-family: 'Playfair Display', sans-serif;
+    color: #2e3038;
+    font-size: 58px;
+    font-weight: bold;
+  }
+
+  p{
+    font-family: Muli, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    color:#8b92ab
+  }
+}
