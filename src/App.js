@@ -1,4 +1,5 @@
 import React from "react";
+import ContactUs from "./Page/Home/ContactUs";
 
 class App extends React.Component {
     constructor(props) {
@@ -9,7 +10,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>My react App</h1>
+                {/*<h1>My react App</h1>*/}
+                <ContactUs />
             </div>
         );
     }

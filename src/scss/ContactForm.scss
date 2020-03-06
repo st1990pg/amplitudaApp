@@ -1,6 +1,8 @@
 .ContactForm{
   .row{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     padding: 30px 0;
   }
 

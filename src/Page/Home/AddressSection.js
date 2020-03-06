@@ -1,5 +1,6 @@
 import React from 'react';
-
+import '../../scss/AddressSection.scss';
+import Map from '../../img/map.png';
 const AddressSection = () => {
     return (
         <div className="AddressSection">
@@ -8,6 +9,7 @@ const AddressSection = () => {
             </div>
             <div className="map">
                 <p>Ekonomski fakultet, Ul. Jovana Tomaševića br. 37, Podgorica</p>
+                <img src={Map} alt=""/>
             </div>
         </div>
     );

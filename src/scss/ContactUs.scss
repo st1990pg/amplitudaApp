@@ -1,16 +1,14 @@
 .ContactUs{
+  margin-top: 140px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
+  justify-content: space-around;
   .form{
-    flex: 1;
-    margin: 140px;
+    width: 40%;
   }
 
   .address{
-    flex: 1;
-    margin: 140px;
+    width: 35%;
+    margin-right: 200px;
     background-color: rgba(0, 0, 0, 0.04);
   }
 
@@ -29,3 +27,4 @@
     color:#8b92ab
   }
 }
+
