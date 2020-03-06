@@ -1,5 +1,5 @@
 import React from "react";
-
+import SimpleSlider from 'Page/Slider/Slider';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -9,6 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>My react App</h1>
+        <SimpleSlider></SimpleSlider>
       </div>
     );
   }
