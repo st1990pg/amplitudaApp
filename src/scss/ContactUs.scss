@@ -1,30 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
 .ContactUs{
-  margin-top: 140px;
+  margin: 14rem auto 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
+
   .form{
     width: 40%;
   }
 
   .address{
     width: 35%;
-    margin-right: 200px;
+    margin-right: 20rem;
     background-color: rgba(0, 0, 0, 0.04);
   }
 
   h1{
     font-family: 'Playfair Display', sans-serif;
     color: #2e3038;
-    font-size: 58px;
+    font-size: 5.8rem;
     font-weight: bold;
   }
 
   p{
     font-family: Muli, sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.5;
     color:#8b92ab
   }
 }
+
+@media screen and (max-width: 768px) {
+  .ContactUs{
+    flex-direction: column;
+    margin: 7rem auto 0 auto;
+
+
+    .form{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .address{
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
 

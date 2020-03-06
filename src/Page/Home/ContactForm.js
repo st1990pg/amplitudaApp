@@ -18,10 +18,10 @@ const ContactForm = () => {
                 </p>
             </div>
             <div className="row">
-                <div className="col">
+                <div className="col-1">
                     <InputText label="Ime i prezime"/>
                 </div>
-                <div className="col">
+                <div className="col-2">
                     <InputText label="email"/>
                 </div>
             </div>
