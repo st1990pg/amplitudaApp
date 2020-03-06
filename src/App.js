@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleSlider from 'Page/Home/Slider';
+import Home from 'Page/Home/index';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>My react App</h1>
-        <SimpleSlider></SimpleSlider>
+        <Home></Home>
       </div>
     );
   }
