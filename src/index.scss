@@ -7,14 +7,14 @@ footer{
   width: 100%;
   overflow-x: hidden;
 }
-.djevojcica{
+.girl{
   height: 250px;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: 1;
 }
-.djecak{
+.boy{
   height: 250px;
   position: absolute;
   right: 0;
@@ -37,4 +37,9 @@ footer{
 .mail{
   text-decoration: none !important;
   color: white;
+}
+.icons i{
+  color: white !important;
+  padding: 0.5rem;
+  font-size: 30px;
 }
