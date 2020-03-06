@@ -22,6 +22,7 @@ class App extends React.Component {
          <Route path="/onama" exact component={Home} />  
       </Switch>
     </Layout>
+        <h1>My react App m</h1>
       </div>
     );
   }
