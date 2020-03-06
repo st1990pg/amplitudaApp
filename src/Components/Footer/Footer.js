@@ -27,8 +27,8 @@ const Footer = props =>{
                         </div>
                     </div> 
                    <div className="mobile">
-                    <p>067 330 137</p>
-                    <Icons/>
+                       <p>067 330 137</p>
+                    <Icons />
                     </div>
                   </div>
                 </div>

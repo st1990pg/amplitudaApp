@@ -12,6 +12,7 @@
   bottom: 0;
   z-index: 1;
 }
+
 footer{
     position: absolute;
     bottom: 0;
@@ -39,9 +40,9 @@ footer{
       font-size: 30px;
    }
 }
+
 @media screen and (max-width:500px){
   .boy, .girl{
     height: 110px;
-
   }
 }
