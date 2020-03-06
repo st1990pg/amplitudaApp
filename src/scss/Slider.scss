@@ -38,7 +38,6 @@ html, body {
 
 .slider-div {
     overflow-x: hidden;
-    // position: relative;
     img {
         display: inline-block;
         width: 57.86%;
@@ -48,8 +47,6 @@ html, body {
         position: relative;
         top: 31px;
         left: -50px;
-        // top: 31px;
-        // left: 500px;
         display: block;
         float: right;
         width: 422px; // 442px bi trebalo
@@ -74,10 +71,6 @@ html, body {
             color: #8b92ab;
         }
     }
-}
-
-.slick-slider {
-    //overflow-x: hidden !important;
 }
 
 .slick-next, .slick-prev {

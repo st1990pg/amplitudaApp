@@ -1,6 +1,6 @@
 import React from 'react';
 import "../scss/ButtonArrow.scss";
-import Arrow from '../arrow-pointing-to-right.svg';
+import Arrow from '../ButtonArrow.svg';
 
 const ButtonArrow = props => {
     const { style } = props;
