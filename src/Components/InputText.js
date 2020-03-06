@@ -4,7 +4,7 @@ import '../scss/InputText.scss';
 
 const InputText = ({label}) => {
     return (
-        <div className="InputText">
+        <div className="InputText" >
             <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>
             <input type="text"/>
         </div>

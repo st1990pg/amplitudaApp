@@ -3,7 +3,7 @@ $light-gray: #8b92ab;
 
 .InputText {
   font-family: Muli, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,6 @@ $light-gray: #8b92ab;
   width: 100%;
 
   input {
-    flex: 1;
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
@@ -29,5 +28,5 @@ $light-gray: #8b92ab;
     font-weight: normal;
   }
 
-  border-bottom: $light-gray 1px solid;
+  border-bottom: $dark-gray 1px solid;
 }

@@ -1,60 +1,61 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 10px;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.ContactUs{
+.ContactUs {
   margin: 14rem auto 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
+  height: 60vh;
 
-  .form{
+  .form {
     width: 40%;
   }
 
-  .address{
+  .address {
     width: 35%;
     margin-right: 20rem;
     background-color: rgba(0, 0, 0, 0.04);
   }
 
-  h1{
+  h1 {
     font-family: 'Playfair Display', sans-serif;
     color: #2e3038;
     font-size: 5.8rem;
     font-weight: bold;
   }
 
-  p{
+  p {
     font-family: Muli, sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.5;
-    color:#8b92ab
+    color: #8b92ab
   }
 }
 
 @media screen and (max-width: 768px) {
-  .ContactUs{
+  .ContactUs {
     flex-direction: column;
     margin: 7rem auto 0 auto;
 
-
-    .form{
+    .form {
       width: 100%;
       margin-bottom: 50px;
     }
 
-    .address{
+    .address {
       width: 100%;
       margin: 0;
     }

@@ -1,18 +1,40 @@
-.AddressSection{
-  padding-bottom: 4rem;
-  .heading{
+.AddressSection {
+
+  .heading {
     padding-left: 3rem;
   }
 
-  .map{
-    p{
+  .map {
+    padding-top: 30px;
+
+    p {
       text-align: center;
+      padding-bottom: 1rem;
     }
-    img{
-      height:45vh;
+
+    img {
       position: relative;
-      right: -5rem;
+      right: -8rem;
+      width: 33vw;
     }
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .AddressSection {
+    text-align: center;
+
+    .heading {
+      padding: 0;
+    }
+
+    .map {
+      img {
+        position: relative;
+        right: 0;
+        width: 90%;
+      }
+    }
+  }
 }
