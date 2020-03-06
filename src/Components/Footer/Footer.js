@@ -1,5 +1,5 @@
 import React from 'react';
-/* import '../../scss/Footer.scss'; */
+/*import '../../scss/Footer.scss';*/
 import girl from "../../img/Djevojcica.png";
 import boy from "../../img/Djecak.png";
 import Icons from "./icons";
