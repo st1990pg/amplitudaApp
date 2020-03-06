@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleSlider from 'Page/Slider/Slider';
+import SimpleSlider from 'Page/Home/Slider';
 class App extends React.Component {
   constructor(props) {
     super(props);
