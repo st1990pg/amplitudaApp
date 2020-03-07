@@ -1,18 +1,31 @@
 import React from "react";
-import About from './Page/Home/About/About';
+import { Route, Switch } from "react-router-dom";
+import Layout from "./Components/Header/Layout";
+import Home from "./Page/Home";
+import Footer from "./Components/Footer/Footer";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text1:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      text2:"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    };
+     };
   }
   render() {
     return (
       <div>
-        <About text1={this.state.text1} text2={this.state.text2}/>
+      
+        <Layout>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/doniraj" exact component={Home} />
+            <Route path="/vijesti" exact component={Home} />
+            <Route path="/blog" exact component={Home} />
+            <Route path="/galerija" exact component={Home} />
+            <Route path="/prijatelji" exact component={Home} />
+            <Route path="/onama" exact component={Home} />
+          </Switch>
+        </Layout>
+        <Footer />
       </div>
     );
   }

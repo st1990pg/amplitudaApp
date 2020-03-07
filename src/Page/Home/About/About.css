@@ -1,5 +1,7 @@
 .about-container{
   display: flex;
+  width: 100vw;
+  background-color: white;
   flex-direction: row;
   margin: 100px 7%;
 }
@@ -73,6 +75,7 @@
    }
    .about-container .text p{
      font-family: Muli, sans-serif;
+     font-weight: normal;
      font-size: 1.12rem;
      line-height: 1.68rem;
      text-align: left;
