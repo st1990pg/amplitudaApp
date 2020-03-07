@@ -1,0 +1,95 @@
+.about-container{
+  display: flex;
+  flex-direction: row;
+  margin: 100px 7%;
+}
+
+.about-container .text,
+.about-container .images{
+  display: inline-block;
+  width: 49%;
+}
+
+.about-container .images{
+  position: relative;
+  height: 35vw;
+}
+
+.about-container .header{
+     font-family: 'Playfair Display', serif;
+     font-size: 4.5rem;
+     font-weight: bold;
+     text-align: left;
+     color: #2e3038;
+     margin-top: 0;
+     margin-bottom: 30px;
+   }
+
+.about-container .circle{
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  background-color: #06aaca;
+  position: absolute;
+  z-index: -1;
+}
+   
+  
+
+   .paragraph{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 8vw;
+    position: relative;
+
+   }
+.paragraph::before{
+  content: "";
+  width: 65%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 8vw;
+  
+}
+
+.about-container .text{
+  position: relative;
+  height: 35vw;
+}
+
+.text-container{
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+   .about-container .paragraph div{
+     width: 100%;
+   }
+   .about-container .text p{
+     font-family: Muli, sans-serif;
+     font-size: 1.12rem;
+     line-height: 1.68rem;
+     text-align: left;
+     color: #8b92ab;
+   }
+
+   .about-container .wave-img{
+     width: 53px;
+     height: 11px;
+   }
+
+   .about-container .images img{
+     width: 38vw;
+     height: auto;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     right: 0;
+   }
+   
