@@ -1,6 +1,6 @@
 import React from "react";
 import ContactUs from "./ContactUs";
-import SimpleSlider from './Slider';
+import SimpleSlider from "./Slider";
 
 class Home extends React.Component {
   constructor(props) {
@@ -11,11 +11,9 @@ class Home extends React.Component {
     return (
       <div>
         <ContactUs />
-      
         <SimpleSlider></SimpleSlider>
       </div>
-    )
-    
+    );
   }
 }
 
