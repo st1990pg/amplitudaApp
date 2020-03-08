@@ -4,9 +4,9 @@ import '../scss/InputText.scss';
 
 const InputText = ({label}) => {
     return (
-        <div className="InputText" >
-            <label>{label.charAt(0).toUpperCase() + label.slice(1)}</label>
-            <input type="text"/>
+        <div className="InputText row p-0">
+            <label className="">{label.charAt(0).toUpperCase() + label.slice(1)}</label>
+            <input type="text" className="ml-auto"/>
         </div>
     );
 };

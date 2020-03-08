@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Layout>
+        <Layout />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/doniraj" exact component={Home} />
@@ -22,7 +22,6 @@ class App extends React.Component {
             <Route path="/prijatelji" exact component={Home} />
             <Route path="/onama" exact component={Home} />
           </Switch>
-        </Layout>
         <Footer />
       </div>
     );
