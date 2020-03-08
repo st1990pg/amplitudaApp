@@ -1,9 +1,10 @@
 .about-container{
   display: flex;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   flex-direction: row;
-  margin: 100px 7%;
+  margin: 100px 0;
+  
 }
 
 .about-container .text,
@@ -17,9 +18,9 @@
   height: 35vw;
 }
 
-.about-container .header{
+.text-container .header{
      font-family: 'Playfair Display', serif;
-     font-size: 4.5rem;
+     font-size: 7.2rem;
      font-weight: bold;
      text-align: left;
      color: #2e3038;
@@ -33,7 +34,7 @@
   border-radius: 50%;
   background-color: #06aaca;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
    
   
@@ -44,6 +45,7 @@
     align-items: flex-start;
     padding-right: 8vw;
     position: relative;
+    padding-bottom: 15px;
 
    }
 .paragraph::before{
@@ -76,10 +78,12 @@
    .about-container .text p{
      font-family: Muli, sans-serif;
      font-weight: normal;
-     font-size: 1.12rem;
-     line-height: 1.68rem;
+     font-size: 1.8rem;
+     line-height: 2.7rem;
      text-align: left;
      color: #8b92ab;
+     padding-right: 15px;
+     margin-bottom: 20px;
    }
 
    .about-container .wave-img{
@@ -95,4 +99,56 @@
      transform: translateY(-50%);
      right: 0;
    }
+
+   .button-container{
+     padding-left: 52px;
+   }
    
+@media only screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container .text,
+  .about-container .images {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-container .header {
+    font-size: 3rem;
+  }
+
+  .about-container .text {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .about-container .text p {
+    font-size: 1.4rem;
+  }
+
+  .text-container {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+
+  .about-container .images {
+    height: 50vw;
+  }
+
+  .about-container .circle {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .about-container .images img {
+    width: 55vw;
+    right: 30vw;
+  }
+}
