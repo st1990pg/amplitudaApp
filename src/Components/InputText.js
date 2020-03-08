@@ -4,9 +4,13 @@ import '../scss/InputText.scss';
 
 const InputText = ({label}) => {
     return (
-        <div className="InputText row p-0">
-            <label className="">{label.charAt(0).toUpperCase() + label.slice(1)}</label>
-            <input type="text" className="ml-auto"/>
+        <div className="InputText">
+            <div>
+                <label className="">{label.charAt(0).toUpperCase() + label.slice(1)}</label>
+            </div>
+            <div style={{flexGrow: '2'}}>
+                <input type="text"/>
+            </div>
         </div>
     );
 };
