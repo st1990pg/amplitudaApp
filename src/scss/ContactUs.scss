@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*border: 1px solid gray;*/
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.ContactUs {
+  width: 80%;
+  height: 60vh;
+  margin: 14rem auto;
+  .form {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .address {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', sans-serif;
+    color: #2e3038;
+    font-size: 5.8rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: Muli, sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #8b92ab
+  }
+}
+
+@media screen and(max-width: 1025px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}

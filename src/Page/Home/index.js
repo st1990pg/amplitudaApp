@@ -1,5 +1,7 @@
 import React from "react";
-import SimpleSlider from './Slider';
+import ContactUs from "./ContactUs";
+import SimpleSlider from "./Slider";
+import BackgroundHeader from "../BackgroundHeader";
 
 class Home extends React.Component {
   constructor(props) {
@@ -9,10 +11,11 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <SimpleSlider></SimpleSlider>
+        <BackgroundHeader/>
+        <SimpleSlider />
+        <ContactUs />
       </div>
-    )
-    
+    );
   }
 }
 
