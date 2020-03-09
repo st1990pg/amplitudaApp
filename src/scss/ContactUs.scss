@@ -18,10 +18,15 @@ body {
   height: 60vh;
   margin: 14rem auto;
   .form {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   .address {
-
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   h1 {
@@ -43,5 +48,37 @@ body {
 @media screen and(max-width: 1025px) {
   html{
     font-size: 8px;
+  }
+}
+
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
   }
 }
