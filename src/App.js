@@ -23,12 +23,7 @@ class App extends React.Component {
             <Route path="/prijatelji" exact component={Home} />
             <Route path="/onama" exact component={Home} />
           </Switch>
-<<<<<<< HEAD
-       
-
-=======
         <Footer />
->>>>>>> master
       </div>
     );
   }
