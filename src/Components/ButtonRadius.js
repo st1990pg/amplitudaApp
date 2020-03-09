@@ -8,7 +8,6 @@ const ButtonRadius = ({classes, text}) => {
 };
 
 ButtonRadius.propTypes = {
-    classes: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired
 };
 

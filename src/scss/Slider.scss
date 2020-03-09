@@ -60,16 +60,21 @@ html, body {
         background-color: white;
         margin-right: -20px;
         h3 {
-            margin: 20px 20px 33px 27px;
+            margin: 14px 39px 33px 27px;
+            padding: 0;
             font-family: PlayfairDisplay;
-            font-size: 36px;
+            font-size: 36px !important;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
             line-height: 1.06;
             letter-spacing: normal;
+            text-align: left;
             color: #2e3038;
         }
     
         p {
-            max-width: 330px;
+            max-width: 370px;
             margin: 0px 28px 16px 27px;
             font-family: Muli;
             font-size: 18px;

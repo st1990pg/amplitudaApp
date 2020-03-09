@@ -1,6 +1,6 @@
 import React from 'react';
 import "../scss/ButtonArrow.scss";
-import Arrow from '../ButtonArrow.svg';
+import Arrow from '../img/ButtonArrow.svg';
 
 const ButtonArrow = props => {
     const { style } = props;

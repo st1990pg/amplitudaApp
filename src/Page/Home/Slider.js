@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import HappyChild1 from "../../Happy-Children.png";
-import HappyChild2 from "../../Happy-Children-Two.png";
+import HappyChild1 from "../../img/Happy-Children.png";
+import HappyChild2 from "../../img/Happy-Children-Two.png";
 import ButtonArrow from "../../Components/ButtonArrow";
 import "../../scss/Slider.scss";
-import ArrowLeft from "../../arrow-left-slider.svg";
-import ArrowRight from "../../arrow-right-slider.svg";
+import ArrowLeft from "../../img/arrow-left-slider.svg";
+import ArrowRight from "../../img/arrow-right-slider.svg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
