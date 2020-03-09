@@ -1,4 +1,23 @@
 @import "scss/App";
-h1 {
-  color: red;
+.main {
+background-image: url("./img/Group\ 101.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
+
+.naslov{
+  color: white;
+  padding-top: 80px;
+}
+
+
+h3{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.paragraf{
+  padding-top: 20px;
+}
+
