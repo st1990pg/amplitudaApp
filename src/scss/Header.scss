@@ -1,0 +1,54 @@
+$breakpoint1: 576px;
+$breakpoint2: 768px;
+
+$color-white : #FFFFFF;
+
+ .navbar {
+     li{
+         padding-left: 20px;
+         padding-right: 20px;
+     }
+
+     .nav-link{
+      color: $color-white !important;
+
+      &:hover{
+            border-bottom: 2px solid $color-white;
+         }
+
+         &.active{
+            border-bottom: 2px solid $color-white;
+         }
+     } 
+
+     .navbar-collapse{
+        text-align: center;
+     }
+ }
+
+ .navbar-toggler {
+   border-color: $color-white !important;
+ }
+
+
+ .nav-wrapper{
+    padding-right: 7%;
+    padding-left: 7%;
+    background-image: url('img/pozadina.png');
+ }
+
+
+ @media only screen and (max-device-width: $breakpoint1){
+    .nav-wrapper{
+        padding-right: unset !important;
+        padding-left: unset !important;
+     }
+ }
+
+ @media only screen and (min-device-width: $breakpoint1) and (max-device-width: $breakpoint2) {
+    
+    .nav-wrapper{
+        padding-right: unset !important;
+        padding-left: unset !important;
+     }
+ } 
