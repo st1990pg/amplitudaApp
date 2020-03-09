@@ -1,4 +1,5 @@
 @import "scss/App";
+<<<<<<< HEAD
 .main {
 background-image: url("./img/Group\ 101.jpg");
 background-position: center;
@@ -21,3 +22,12 @@ h3{
   padding-top: 20px;
 }
 
+=======
+@import "scss/footer";
+@import "scss/Header";
+@import "scss/ButtonRadius";
+@import "scss/InputText";
+@import "scss/ContactForm";
+@import "scss/ContactUs";
+@import "scss/AddressSection";
+>>>>>>> master
