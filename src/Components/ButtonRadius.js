@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 const ButtonRadius = ({classes, text}) => {
-    return <button type="button" className={classes}>{text}</button>;
+    return <button type="button" className={`ButtonRadius ${classes}`}>{text}</button>;
 };
 
 ButtonRadius.propTypes = {
@@ -13,7 +13,6 @@ ButtonRadius.propTypes = {
 };
 
 ButtonRadius.defaultProps = {
-    classes: "ButtonRadius",
     text: 'Pošalji'
 };
 

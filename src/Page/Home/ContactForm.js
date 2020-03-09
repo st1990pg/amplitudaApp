@@ -31,7 +31,7 @@ const ContactForm = () => {
                 <InputText label="Poruka"/>
             </div>
             <div className="row form-submit">
-                <ButtonRadius/>
+                <ButtonRadius />
             </div>
         </div>
     );
