@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonRadius from "../Components/ButtonRadius";
 
 const BackgroundHeader = () => {
   return (
@@ -22,7 +23,12 @@ const BackgroundHeader = () => {
             </p>
             <h3>Mi smo spremni,a vi ?</h3>
           </div>
-          <div className="col-8"></div>
+          <div className="col-6"></div>
+        </div>
+        <div className="row">
+          <div className="col-3">
+            <ButtonRadius />
+          </div>
         </div>
       </div>
     </div>
