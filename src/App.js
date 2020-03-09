@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./Components/Header/Layout";
 import Home from "./Page/Home";
+import Footer from "./Components/Footer/Footer";
 
 
 class App extends React.Component {
@@ -22,8 +23,12 @@ class App extends React.Component {
             <Route path="/prijatelji" exact component={Home} />
             <Route path="/onama" exact component={Home} />
           </Switch>
+<<<<<<< HEAD
        
 
+=======
+        <Footer />
+>>>>>>> master
       </div>
     );
   }
