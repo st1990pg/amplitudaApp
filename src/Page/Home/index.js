@@ -10,8 +10,8 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <SimpleSlider />
         <ContactUs />
-        <SimpleSlider></SimpleSlider>
       </div>
     );
   }
