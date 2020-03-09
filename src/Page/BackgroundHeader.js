@@ -27,7 +27,7 @@ const BackgroundHeader = () => {
         </div>
         <div className="row">
           <div className="col-3">
-            <ButtonRadius />
+            <ButtonRadius className="transparent" text="Doniraj" />
           </div>
         </div>
       </div>

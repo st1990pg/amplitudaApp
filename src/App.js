@@ -4,7 +4,6 @@ import Layout from "./Components/Header/Layout";
 import Home from "./Page/Home";
 import Footer from "./Components/Footer/Footer";
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -14,15 +13,15 @@ class App extends React.Component {
     return (
       <div>
         <Layout />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/doniraj" exact component={Home} />
-            <Route path="/vijesti"  exact component={Home} />
-            <Route path="/blog" exact component={Home} />
-            <Route path="/galerija" exact component={Home} />
-            <Route path="/prijatelji" exact component={Home} />
-            <Route path="/onama" exact component={Home} />
-          </Switch>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/doniraj" exact component={Home} />
+          <Route path="/vijesti" exact component={Home} />
+          <Route path="/blog" exact component={Home} />
+          <Route path="/galerija" exact component={Home} />
+          <Route path="/prijatelji" exact component={Home} />
+          <Route path="/onama" exact component={Home} />
+        </Switch>
         <Footer />
       </div>
     );
