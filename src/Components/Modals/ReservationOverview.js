@@ -17,9 +17,9 @@ const ReservationOverview = () => {
             <div className="reservation-overview__content">
                 <div className="content-subsection">
                     <h4 className='content-subsection__heading'>Informacije o donatoru:</h4>
-                    <InputText label="Ime i prezime donatora"/>
+                    <InputText label="ime i prezime donatora"/>
                     <InputText label="Email"/>
-                    <InputText label="Broj Telefona"/>
+                    <InputText label="Broj telefona"/>
                 </div>
                 <div className="content-subsection">
                     <h4 className='content-subsection__heading'>Informacije o artiklima:</h4>

@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
 
+
     p{
       font-size: 18px;
       line-height: 1.5;
@@ -27,6 +28,7 @@
     max-width: 530px;
     display: flex;
     flex-direction: column;
+    transform: translateX(5rem);
     .content-subsection{
       margin-top: 5rem;
       display: flex;
@@ -52,6 +54,12 @@
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(5rem);
+
     .footer__message{
       font-size: 18px;
       color: $warning-orange;
@@ -59,8 +67,8 @@
     }
 
     .footer__submit{
-      margin: 0 auto;
-      width: 50%;
+      margin: 3rem auto;
+      width: 60%;
     }
   }
 }

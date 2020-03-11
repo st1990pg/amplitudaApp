@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import '../scss/InputText.scss';
 
 const InputText = ({label}) => {
+    const ucfirst = (label) => {
+        return label.charAt(0).toUpperCase() + label.slice(1);
+    };
     return (
         <div className="InputText">
             <div>
-                <label className="">{label.charAt(0).toUpperCase() + label.slice(1)}</label>
+                <label className="">{ucfirst(label)}</label>
             </div>
             <div style={{flexGrow: '2'}}>
                 <input type="text"/>
