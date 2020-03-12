@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /*border: 1px solid gray;*/
 }
 
 html {
@@ -13,20 +14,19 @@ body {
 }
 
 .ContactUs {
-  margin: 14rem auto 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  width: 80%;
   height: 60vh;
-
+  margin: 14rem auto;
   .form {
-    width: 40%;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   .address {
-    width: 35%;
-    margin-right: 20rem;
-    background-color: rgba(0, 0, 0, 0.04);
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   h1 {
@@ -45,21 +45,40 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .ContactUs {
-    flex-direction: column;
-    margin: 7rem auto 0 auto;
-
-    .form {
-      width: 100%;
-      margin-bottom: 50px;
-    }
-
-    .address {
-      width: 100%;
-      margin: 0;
-    }
+@media screen and(max-width: 1025px) {
+  html{
+    font-size: 8px;
   }
 }
 
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
+  80%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80%{
+    transform: translateX(-10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}

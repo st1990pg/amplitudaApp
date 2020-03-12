@@ -2,12 +2,12 @@ $accent-color: #06aaca;
 
 .ButtonRadius {
   font-family: Muli, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 900;
   color: white;
   border: none;
   width: 100%;
-  height: 70px;
+  height: 7rem;
   border-radius: 35px;
   box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
   background-color: $accent-color;
@@ -31,6 +31,14 @@ $accent-color: #06aaca;
   &:hover, &:focus {
     cursor: pointer;
     outline: none;
+    transition: all .2s;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active{
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   }
 }
 

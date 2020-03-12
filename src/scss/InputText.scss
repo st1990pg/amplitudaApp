@@ -5,11 +5,11 @@ $light-gray: #8b92ab;
   font-family: Muli, sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
+  color: $light-gray;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  color: $light-gray;
-  padding: 5px 0;
-  width: 100%;
+  border-bottom: $dark-gray 1px solid;
 
   input {
     font-size: inherit;
@@ -17,16 +17,18 @@ $light-gray: #8b92ab;
     color: inherit;
     border: none;
     text-align: right;
-
+    width: 100%;
     &:focus, &:hover {
       outline: none;
     }
   }
 
   label {
+    display: inline-block;
     color: $dark-gray;
     font-weight: normal;
+    white-space: nowrap;
+    padding-bottom: 1rem;
   }
 
-  border-bottom: $dark-gray 1px solid;
 }

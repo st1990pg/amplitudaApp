@@ -1,5 +1,7 @@
+@import "scss/Variables";
+@import "scss/Resets";
 @import "scss/App";
-@import "scss/Footer";
+@import "scss/footer";
 @import "scss/Header";
 @import "scss/ButtonRadius";
 @import "scss/InputText";
@@ -7,3 +9,7 @@
 @import "scss/ContactUs";
 @import "scss/AddressSection";
 @import "scss/About";
+@import "scss/BackgroundHeader";
+@import "scss/MainHeading";
+@import "scss/ReservationOverview";
+@import "scss/DropdownField";

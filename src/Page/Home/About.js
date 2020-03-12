@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from '../../img/photo.jpg';
 import Wave from '../../img/Path15.svg';
-import ButtonArrow from '../../../Components/ButtonArrow';
+import ButtonArrow from '../../Components/ButtonArrow';
 
 
-const About = props =>{
+const About = props => {
 
 
     return (

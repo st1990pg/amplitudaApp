@@ -18,9 +18,9 @@ const Navigation = (props) => {
   return (
     <div>
       <Navbar expand="md">
-        <NavbarBrand href="/">
+        
         <Logo/>
-        </NavbarBrand>
+        
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
