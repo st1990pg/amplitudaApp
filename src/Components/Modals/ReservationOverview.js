@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import MainHeading from "../MainHeading";
 import ButtonArrow from "../ButtonArrow";
 import Cancel from '../../img/cancel.svg'
@@ -7,27 +7,44 @@ import DropdownField from "../DropdownField";
 import ButtonRadius from "../ButtonRadius";
 
 const ReservationOverview = () => {
+    const exampleUserData = {
+        name: 'Stefan Nikocevic',
+        email: 'nikocevicstefan@gmail.com',
+        phone: '069602930'
+    };
+
+    const exampleDonationData = {
+        pol: 'Zenski',
+        uzrast: '10-12 godina',
+        broj: 33,
+        kolicina: 2,
+        cjenovni_raspon: '20-40'
+    };
+
+    const [userData, setUserData] = useState(exampleUserData);
+    const [donationData, setDonationData] = useState(exampleDonationData);
+
     return (
         <div className="reservation-overview">
             <div className="reservation-overview__heading">
                 <p>Prethodni Korak</p>
-                <MainHeading text={'Pregled rezervacije'}/>
+                <MainHeading text='Pregled rezervacije'/>
                 <img src={Cancel} alt="cancel_button"/>
             </div>
             <div className="reservation-overview__content">
                 <div className="content-subsection">
                     <h4 className='content-subsection__heading'>Informacije o donatoru:</h4>
-                    <InputText label="ime i prezime donatora"/>
-                    <InputText label="Email"/>
-                    <InputText label="Broj telefona"/>
+                    <InputText label="ime i prezime donatora" value={userData.name} disabled={true}/>
+                    <InputText label="Email" value={userData.email} disabled={true}/>
+                    <InputText label="Broj telefona" value={userData.phone} disabled={true}/>
                 </div>
                 <div className="content-subsection">
                     <h4 className='content-subsection__heading'>Informacije o artiklima:</h4>
-                    <DropdownField key="1" title="Trenerke"/>
-                    <DropdownField key="2" title="Carape"/>
-                    <DropdownField key="3" title="Patike"/>
-                    <DropdownField key="4" title="Bojanke"/>
-                    <DropdownField key="5" title="Igracke"/>
+                    <DropdownField key="1" title="Trenerke" fields={donationData}/>
+                    <DropdownField key="2" title="Carape" fields={donationData}/>
+                    <DropdownField key="3" title="Patike" fields={donationData}/>
+                    <DropdownField key="4" title="Bojanke" fields={donationData}/>
+                    <DropdownField key="5" title="Igracke" fields={donationData}/>
                 </div>
             </div>
             <div className="reservation-overview__footer">
