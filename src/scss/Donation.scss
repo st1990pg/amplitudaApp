@@ -1,0 +1,38 @@
+.reservation-overview__paragraf {
+  margin: 5rem auto;
+  width: 100%;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #8b92ab;
+}
+.reservation-overview_btn {
+  margin: 0.5rem auto;
+
+  .wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .odabirPola {
+      border: none;
+      background-color: white;
+      outline: none;
+      text-align: center;
+      color: #8b92ab;
+    }
+    .left {
+      padding-right: 20px;
+    }
+    .right {
+      padding-left: 20px;
+    }
+    .ikonice{
+        padding-bottom: 10px;
+    }
+    .odabirPola:hover, .odabirPola:focus, .odabirPola:active{
+        color: #06aaca;
+        font-weight: bold;
+    }
+  }
+}
