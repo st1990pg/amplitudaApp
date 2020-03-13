@@ -17,8 +17,8 @@
             border-radius: 50%;
             display: block;
             position: relative;
-        }
-        input[type=radio] + label span{
+          }
+          input[type=radio] + label span{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -26,8 +26,9 @@
             color: #fff;
             font-size: 19px;
             text-align: center;
-        }
-        input[type=radio]:checked + label{
+          }
+          input[type=radio]:checked + label{
+            box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
             background: linear-gradient(205deg, #06aaca 87%, #00859f 4%);
         }
       }
@@ -44,8 +45,8 @@
             border-radius: 50%;
             display: block;
             position: relative;
-        }
-        input[type=radio] + label span{
+          }
+          input[type=radio] + label span{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -53,9 +54,10 @@
             color: #fff;
             font-size: 19px;
             text-align: center;
-        }
-        input[type=radio]:checked + label{
+          }
+          input[type=radio]:checked + label{
             background: linear-gradient(205deg, #06aaca 87%, #00859f 4%);
+            box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
         }
       }
     }
