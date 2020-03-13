@@ -3,6 +3,7 @@ import About from './About';
 import ContactUs from "./ContactUs";
 import SimpleSlider from "./Slider";
 import BackgroundHeader from "../BackgroundHeader";
+import ModalTriggers from "./ModalTriggers";
 
 class Home extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class Home extends React.Component {
         <About text1={text1} text2={text2} />
         <SimpleSlider />
         <ContactUs />
+        <ModalTriggers />
       </div>
     );
   }
