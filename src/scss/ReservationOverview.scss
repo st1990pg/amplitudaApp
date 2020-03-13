@@ -1,6 +1,8 @@
 .reservation-overview{
   font-family: Muli, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
+  background: white;
 
   &__heading{
     width: 80%;
@@ -19,6 +21,7 @@
 
     img{
       margin: 0;
+      cursor: pointer;
     }
   }
 

@@ -6,7 +6,7 @@ import InputText from "../InputText";
 import DropdownField from "../DropdownField";
 import ButtonRadius from "../ButtonRadius";
 
-const ReservationOverview = () => {
+const ReservationOverview = ({close}) => {
     const exampleUserData = {
         name: 'Stefan Nikocevic',
         email: 'nikocevicstefan@gmail.com',
@@ -28,8 +28,8 @@ const ReservationOverview = () => {
         <div className="reservation-overview">
             <div className="reservation-overview__heading">
                 <p>Prethodni Korak</p>
-                <MainHeading text='Pregled rezervacije'/>
-                <img src={Cancel} alt="cancel_button"/>
+                <MainHeading text='Pregled rezervacije' style={{flex:1}}/>
+                <img src={Cancel} alt="cancel_button" onClick={close}/>
             </div>
             <div className="reservation-overview__content">
                 <div className="content-subsection">
