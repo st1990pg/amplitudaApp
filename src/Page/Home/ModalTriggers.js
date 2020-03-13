@@ -17,7 +17,7 @@ const ModalTriggers = () => {
     const [modalSeven, toggleModalSeven] = useToggle(false);
 
     return (
-        <div className="modal-triggers">
+        <div className="modal-triggers mt-5">
             {/*Saljemo funkciju otvaranja modala dugmadima*/}
             <ButtonRadius text="1 of 7" onclick={toggleModalOne}/>
             <ButtonRadius text="2 of 7" onclick={toggleModalTwo}/>

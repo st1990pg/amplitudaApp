@@ -23,14 +23,14 @@ const PersonalInfo = ({close}) => {
             <div className="reservation-overview_btn">
                 <div className="wrapp">
                     <div className="left">
-                        <input type="radio" name="colour" value="green" id="colour-green" />
-                        <label for="colour-green" >
+                        <input type="radio" name="colour" value="blue" id="colour-blue" />
+                        <label htmlFor="colour-blue" >
                             <span>Pravno Lice</span>
                         </label>
                     </div>
                     <div className="right">
-                        <input type="radio" name="colour" value="red" id="colour-red" />
-                        <label for="colour-red">
+                        <input type="radio" name="colour" value="gray" id="colour-gray" />
+                        <label htmlFor="colour-gray">
                             <span>Fizicko Lice</span>
                         </label>
                     </div>
