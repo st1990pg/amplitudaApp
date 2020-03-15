@@ -11,7 +11,7 @@ footer {
     z-index: 1;
     overflow: visible;
   }
-  
+
   .boy {
     height: 270px;
     position: absolute;
@@ -27,7 +27,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    color: white; 
+    color: white;
     font-size: 18px;
   }
 
@@ -47,10 +47,14 @@ footer {
   }
 }
 
-@media screen and (max-width:500px) {
-
+@media screen and (max-width: 500px) {
   .boy,
   .girl {
     height: 110px;
   }
+}
+
+.mail {
+  text-decoration: none !important;
+  color: white;
 }

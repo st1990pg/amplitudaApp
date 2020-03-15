@@ -1,1 +1,11 @@
 @import "scss/Footer";
+
+.App {
+  .home {
+    button.ButtonRadius {
+      &.px-100 {
+        font-size: 100px;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About/About";
 import ContactUs from "./ContactUs";
 import SimpleSlider from "./Slider";
-import BackgroundHeader from "../BackgroundHeader";
+import BackgroundHeader from "./BackgroundHeader";
 
 class Home extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class Home extends React.Component {
   render() {
     const { text1, text2 } = this.state;
     return (
-      <div>
+      <div className="home">
         <BackgroundHeader />
         <About text1={text1} text2={text2} />
         <SimpleSlider />
