@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Layout from "./Components/Header/Layout";
 import Home from "./Page/Home";
 import Footer from "./Components/Footer/Footer";
+import ReservationOverview from "./Components/Modals/ReservationOverview";
 
 class App extends React.Component {
   constructor(props) {
