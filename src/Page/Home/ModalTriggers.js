@@ -2,6 +2,7 @@ import React from 'react';
 import ButtonRadius from "../../Components/ButtonRadius";
 import useToggle from "../../hooks/useToggle";
 import ReservationOverview from "../../Components/Modals/ReservationOverview";
+import Donation from "../../Components/Modals/Donation";
 import ModalWrapper from "../../Components/Modals/ModalWrapper";
 
 const ModalTriggers = () => {
@@ -31,6 +32,12 @@ const ModalTriggers = () => {
                 {/*Proslijedjuje modalu mogucnost da sam sebe zatvori (npr na 'X' dugmetu) */}
                 <ReservationOverview close={toggleModalSeven}/>
             </ModalWrapper>
+
+            <ModalWrapper show={modalOne}>
+                {/*Proslijedjuje modalu mogucnost da sam sebe zatvori (npr na 'X' dugmetu) */}
+                <Donation close={toggleModalOne}/>
+            </ModalWrapper>
+
             {/*
             <ModalWrapper show={modalSix}>
                 <YourModalComponent  close={toggleModalSix}/>
