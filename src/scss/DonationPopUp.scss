@@ -1,0 +1,31 @@
+
+.image img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    
+   
+}
+
+
+
+.header{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 52px;
+    
+    
+
+}
+.image1{
+    position: relative;
+}
+
+
+.image1 img{
+    position: absolute;
+    top: -450px;
+    right: 0;
+
+}

@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="App">
         <Layout />
         <Switch>
           <Route path="/" exact component={Home} />
