@@ -6,7 +6,7 @@ import ButtonRadius from "../ButtonRadius";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
 
-const Donation = ({ close }) => {
+const DonationComponent = ({ close }) => {
   const exampleDonationData = {
     uzrast: [1, 2, 3, 4, 5, 6]
   };
@@ -74,4 +74,4 @@ const Donation = ({ close }) => {
   );
 };
 
-export default Donation;
+export default DonationComponent;

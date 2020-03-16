@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import HappyChild1 from "../../img/Happy-Children.png";
 import HappyChild2 from "../../img/Happy-Children-Two.png";
-import ButtonArrow from "../../Components/ButtonArrow";
+import { ButtonArrow } from "../../Components";
 import "../../scss/Slider.scss";
 import ArrowLeft from "../../img/arrow-left-slider.svg";
 import ArrowRight from "../../img/arrow-right-slider.svg";
+import { slider } from "../../../moc/doniraj";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -60,6 +61,18 @@ export default class SimpleSlider extends Component {
       prevArrow: <SamplePrevArrow />,
       nextArrow: <SampleNextArrow />
     };
+    console.log(slider);
+    const sliderBody = slider.map((slid, index) => {
+      return (
+        <div className="slider-div" key={index}>
+          <img src={slid["img"]} alt={slid.text.title} />
+          <div className="slider-text-div">
+            <h3>{slid.text.title}</h3>
+            <p>{slid.text.body}</p>
+          </div>
+        </div>
+      );
+    });
     return (
       <div className="slider">
         <div className="slider-wrapper">
@@ -74,56 +87,7 @@ export default class SimpleSlider extends Component {
             </span>
           </div>
 
-          <Slider {...settings}>
-            <div className="slider-div">
-              <img src={HappyChild1} alt="Happy Child" />
-              <div className="slider-text-div">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it.
-                </p>
-              </div>
-            </div>
-            <div className="slider-div">
-              <img src={HappyChild2} alt="Happy Child" />
-              <div className="slider-text-div">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it.
-                </p>
-              </div>
-            </div>
-            <div className="slider-div">
-              <img src={HappyChild1} alt="Happy Child" />
-              <div className="slider-text-div">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it.
-                </p>
-              </div>
-            </div>
-            <div className="slider-div">
-              <img src={HappyChild2} alt="Happy Child" />
-              <div className="slider-text-div">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it.
-                </p>
-              </div>
-            </div>
-          </Slider>
+          <Slider {...settings}>{sliderBody}</Slider>
         </div>
       </div>
     );
