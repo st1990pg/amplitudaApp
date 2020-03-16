@@ -2,8 +2,7 @@ import React from "react";
 import ButtonRadius from "../../Components/ButtonRadius";
 import useToggle from "../../hooks/useToggle";
 import ReservationOverview from "../../Components/Modals/ReservationOverview";
-import Donation from "../../Components/Modals/Donation";
-import PersonalInfo from "../../Components/Modals/PersonalInfo";
+import { Donation, PersonalInfo } from "../../Components";
 import ModalWrapper from "../../Components/Modals/ModalWrapper";
 
 const ModalTriggers = () => {

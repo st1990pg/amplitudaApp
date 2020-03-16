@@ -1,0 +1,24 @@
+{
+  "odabrano": [{ "id": 1, "name": "Trenerka", "valeu": true }],
+  "doniraj": [
+    {
+      "id": 1,
+      "name": "Obuca i odjeca",
+      "icon": "",
+      "items": [
+        { "id": 1, "name": "Trenerka", "valeu": true },
+        { "id": 2, "name": "Patike", "valeu": false }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Skjolski pribor i igracke",
+      "icon": ""
+    },
+    {
+      "id": 3,
+      "name": "Higijena",
+      "icon": ""
+    }
+  ]
+}
