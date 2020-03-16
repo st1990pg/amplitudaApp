@@ -9,3 +9,4 @@ export const Donation = DonationComponent;
 //PersonalInfoComponent
 import PersonalInfoComponent from "./Modals/PersonalInfo";
 export const PersonalInfo = PersonalInfoComponent;
+

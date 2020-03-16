@@ -4,6 +4,8 @@ import useToggle from "../../hooks/useToggle";
 import ReservationOverview from "../../Components/Modals/ReservationOverview";
 import { Donation, PersonalInfo } from "../../Components";
 import ModalWrapper from "../../Components/Modals/ModalWrapper";
+import DonationPopUp from "../../Components/Modals/DonationPopUp";
+
 
 const ModalTriggers = () => {
   //otvara/zatvara modale
@@ -40,6 +42,11 @@ const ModalTriggers = () => {
       <ModalWrapper show={modalSix}>
         <PersonalInfo close={toggleModalSix} />
       </ModalWrapper>
+
+      <ModalWrapper show={modalFour}>
+        <DonationPopUp close={toggleModalFour} />
+      </ModalWrapper>
+
     </div>
   );
 };
