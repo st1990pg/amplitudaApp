@@ -1,6 +1,6 @@
 import React from 'react';
 import InputText from "../../Components/InputText";
-import ButtonRadius from "../../Components/ButtonRadius";
+import {ButtonRadius} from "../../Components";
 import '../../scss/ContactForm.scss';
 import BlueLines from '../../img/blue-lines.svg'
 

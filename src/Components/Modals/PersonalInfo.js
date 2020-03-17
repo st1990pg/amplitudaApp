@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import InputText from "../InputText";
-import ButtonRadius from "../ButtonRadius";
+import {ButtonRadius} from "../index";
 
 const PersonalInfoComponent = ({ close }) => {
   return (

@@ -4,7 +4,7 @@ import ButtonArrow from "../ButtonArrow";
 import Cancel from '../../img/cancel.svg'
 import InputText from "../InputText";
 import DropdownField from "../DropdownField";
-import ButtonRadius from "../ButtonRadius";
+import {ButtonRadius} from "../index";
 import {donationSelection} from "../../../moc/doniraj";
 
 const ReservationOverview = ({close}) => {

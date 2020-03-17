@@ -2,7 +2,7 @@ import React from "react";
 import "../scss/ButtonRadius.scss";
 import PropTypes from "prop-types";
 
-const ButtonRadius = ({ classes, text, onclick }) => {
+const ButtonRadiusComponent = ({ classes, text, onclick }) => {
   return (
     <button type="button" className={`ButtonRadius ${classes}`} onClick={onclick}>
       {text}
@@ -10,14 +10,14 @@ const ButtonRadius = ({ classes, text, onclick }) => {
   );
 };
 
-ButtonRadius.propTypes = {
+ButtonRadiusComponent.propTypes = {
   text: PropTypes.string.isRequired,
   classes: PropTypes.string,
   onclick: PropTypes.func
 };
 
-ButtonRadius.defaultProps = {
+ButtonRadiusComponent.defaultProps = {
   text: "Pošalji"
 };
 
-export default ButtonRadius;
+export default ButtonRadiusComponent;

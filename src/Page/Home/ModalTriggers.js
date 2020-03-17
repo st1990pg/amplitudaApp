@@ -1,6 +1,5 @@
 import React from "react";
-import ButtonRadius from "../../Components/ButtonRadius";
-import useToggle from "../../hooks/useToggle";
+import {ButtonRadius} from "../../Components";import useToggle from "../../hooks/useToggle";
 import ReservationOverview from "../../Components/Modals/ReservationOverview";
 import { Donation, PersonalInfo } from "../../Components";
 import ModalWrapper from "../../Components/Modals/ModalWrapper";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
-import ButtonRadius from "../ButtonRadius";
+import {ButtonRadius} from "../index";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
 
