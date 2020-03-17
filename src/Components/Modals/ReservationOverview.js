@@ -5,6 +5,7 @@ import Cancel from '../../img/cancel.svg'
 import InputText from "../InputText";
 import DropdownField from "../DropdownField";
 import ButtonRadius from "../ButtonRadius";
+import {donationSelection} from "../../../moc/doniraj";
 
 const ReservationOverview = ({close}) => {
     const exampleUserData = {
@@ -40,11 +41,11 @@ const ReservationOverview = ({close}) => {
                 </div>
                 <div className="content-subsection">
                     <h4 className='content-subsection__heading'>Informacije o artiklima:</h4>
-                    <DropdownField key="1" title="Trenerke" fields={donationData}/>
-                    <DropdownField key="2" title="Carape" fields={donationData}/>
-                    <DropdownField key="3" title="Patike" fields={donationData}/>
-                    <DropdownField key="4" title="Bojanke" fields={donationData}/>
-                    <DropdownField key="5" title="Igracke" fields={donationData}/>
+                    {
+                        donationSelection.map(selection => {
+                            return <DropdownField key={selection.id} title={selection.title} fields={selection.description}/>
+                        })
+                    }
                 </div>
             </div>
             <div className="reservation-overview__footer">
