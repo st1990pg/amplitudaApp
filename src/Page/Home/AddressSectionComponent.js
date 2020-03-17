@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../scss/AddressSection.scss';
 import Map from '../../img/map.png';
-const AddressSection = () => {
+const AddressSectionComponent = () => {
     return (
         <div className="AddressSection">
             <div className="heading">
@@ -15,4 +15,4 @@ const AddressSection = () => {
     );
 };
 
-export default AddressSection;
+export default AddressSectionComponent;

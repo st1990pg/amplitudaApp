@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import MainHeading from "../MainHeading";
 import ButtonArrow from "../ButtonArrow";
 import Cancel from '../../img/cancel.svg'
-import InputText from "../InputText";
 import DropdownField from "../DropdownField";
-import {ButtonRadius} from "../index";
+import {ButtonRadius, InputText} from "../index";
 import {donationSelection} from "../../../moc/doniraj";
 
 const ReservationOverview = ({close}) => {
