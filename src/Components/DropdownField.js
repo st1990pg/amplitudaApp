@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import useToggle from "../hooks/useToggle";
 import PropTypes from 'prop-types';
-import InputText from "./InputText";
+import {InputText} from "./index";
 import {ucfirst,underscoreToSpace} from "../Helpers";
 import ArrowDown from '../img/chevron-arrow-down.svg';
 import ArrowUp from '../img/chevron-arrow-up.svg';

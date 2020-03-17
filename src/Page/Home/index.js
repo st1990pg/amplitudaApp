@@ -1,6 +1,6 @@
 import React from "react";
 import About from './About';
-import ContactUs from "./ContactUs";
+import {ContactUs} from "../../Components";
 import SimpleSlider from "./Slider";
 import BackgroundHeader from "./BackgroundHeader";
 import ModalTriggers from "./ModalTriggers";

@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonRadius from "../../Components/ButtonRadius";
+import {ButtonRadius} from "../../Components";
 
 const BackgroundHeader = () => {
   return (
