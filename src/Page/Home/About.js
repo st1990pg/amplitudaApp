@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "../../../img/photo.jpg";
-import Wave from "../../../img/Path15.svg";
-import { ButtonArrow } from "../../../Components";
+import Image from "../../img/photo.jpg";
+import Wave from "../../img/Path15.svg";
+import ButtonArrow from "../../Components/ButtonArrow";
 
-import "./About.css";
 
 const About = props => {
   return (
