@@ -1,0 +1,55 @@
+.donate-header-wrapper {
+  width: 100%;
+  padding: 20px 141px;
+  overflow: hidden;
+
+  .donate-header {
+    width: 640px;
+    float: left;
+    margin-top: 60px;
+
+    
+
+    
+  }
+
+  .img-div {
+    float: right;
+    margin-right: 84px;
+    width: 686.8px;
+    height: 723.7px;
+
+    img {
+        
+        height: 600px;
+    }
+  }
+}
+
+.donate-heading  {
+    font-family: PlayfairDisplay;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.18;
+    color: #2e3038;
+    margin-bottom: 55px;
+  }
+
+  .donate-p {
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8b92ab;
+  }
+
+.middle-header {
+
+    text-align: center;
+    .middle-heading {
+        margin: 0 !important;
+    }
+
+    p {
+        margin: 28px 0;
+    }
+}

@@ -24,9 +24,11 @@ $light-gray: #8b92ab;
   }
 
   label {
+    display: inline-block;
     color: $dark-gray;
     font-weight: normal;
     white-space: nowrap;
+    padding-bottom: 1rem;
   }
 
 }

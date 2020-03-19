@@ -1,0 +1,74 @@
+.reservation-overview_btn{
+    margin: 7rem auto;
+    .wrapp{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .left{
+        input[type=radio]{
+            display:none;
+        }
+        input[type=radio] + label{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: none;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+          }
+          input[type=radio] + label span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 19px;
+            text-align: center;
+          }
+          input[type=radio]:checked + label{
+            box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
+            background: linear-gradient(205deg, #06aaca 87%, #00859f 4%);
+        }
+      }
+      .right{
+        input[type=radio]{
+            display:none;
+        }
+        input[type=radio] + label{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: none;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+          }
+          input[type=radio] + label span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 19px;
+            text-align: center;
+          }
+          input[type=radio]:checked + label{
+            background: linear-gradient(205deg, #06aaca 87%, #00859f 4%);
+            box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
+        }
+      }
+    }
+  }
+
+  .reservation-overview__paragraf{
+    margin: 7rem auto;
+    width: 100%;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #8b92ab;
+  }
