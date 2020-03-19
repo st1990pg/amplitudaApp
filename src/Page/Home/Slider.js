@@ -6,7 +6,10 @@ import { ButtonArrow } from "../../Components";
 import "../../scss/Slider.scss";
 import ArrowLeft from "../../img/arrow-left-slider.svg";
 import ArrowRight from "../../img/arrow-right-slider.svg";
-import { slider } from "../../../moc/doniraj";
+//import Axios from "axios";
+import { connect } from "react-redux";
+import { fetchSlider } from "Actions/sliderAction";
+//import { slider } from "../../../moc/doniraj";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -47,7 +50,10 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class SimpleSlider extends Component {
+class SimpleSlider extends Component {
+  componentDidMount() {
+    this.props.fetchSlider();
+  }
   render() {
     const settings = {
       arrows: true,
@@ -61,6 +67,7 @@ export default class SimpleSlider extends Component {
       prevArrow: <SamplePrevArrow />,
       nextArrow: <SampleNextArrow />
     };
+    const { slider } = this.props;
     console.log(slider);
     const sliderBody = slider.map((slid, index) => {
       return (
@@ -93,3 +100,9 @@ export default class SimpleSlider extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  slider: state.slider.items
+});
+
+export default connect(mapStateToProps, { fetchSlider })(SimpleSlider);
