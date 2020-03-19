@@ -2,7 +2,7 @@ import React from "react";
 import "../scss/ButtonArrow.scss";
 import Arrow from "../img/ButtonArrow.svg";
 
-const ButtonArrow = props => {
+const ButtonArrowComponent = props => {
   const { style } = props;
   return (
     <div>
@@ -17,4 +17,4 @@ const ButtonArrow = props => {
   );
 };
 
-export default ButtonArrow;
+export default ButtonArrowComponent;

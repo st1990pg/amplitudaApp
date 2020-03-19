@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
-import ButtonRadius from "../ButtonRadius";
+import { ButtonRadius } from "../index";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
 
-const Donation = ({ close }) => {
+const DonationComponent = ({ close }) => {
   const exampleDonationData = {
     uzrast: [1, 2, 3, 4, 5, 6]
   };
 
   // const [userData, setUserData] = useState(exampleUserData);
   const [donationData, setDonationData] = useState(exampleDonationData);
+
+  function btnColorChange() {
+    console.log(" ");
+  }
 
   return (
     <div className="reservation-overview">
@@ -33,7 +37,7 @@ const Donation = ({ close }) => {
       <div className="reservation-overview_btn">
         <div className="wrapp">
           <div className="left">
-            <button onClick="btnColorChange()" className="odabirPola">
+            <button onClick={btnColorChange()} className="odabirPola">
               <p>
                 <img src={Girl} className="ikonice" />
                 Ženski
@@ -41,7 +45,7 @@ const Donation = ({ close }) => {
             </button>
           </div>
           <div className="right">
-            <button onClick="btnColorChange()" className="odabirPola">
+            <button onClick={btnColorChange()} className="odabirPola">
               <p>
                 <img src={Boy} className="ikonice" />
                 Muški
@@ -74,4 +78,4 @@ const Donation = ({ close }) => {
   );
 };
 
-export default Donation;
+export default DonationComponent;
