@@ -1,5 +1,5 @@
 //ButtonArrowComponent
-import ButtonArrowComponent from "./ButtonArrow";
+import ButtonArrowComponent from "./ButtonArrowComponent";
 export const ButtonArrow = ButtonArrowComponent;
 
 //DonationComponent

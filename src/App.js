@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import axios from "axios";
 
 import store from "./store";
+import Donate from "./Page/Donate/Donate";
 
 axios.defaults.baseURL = "http://localhost:3000";
 
@@ -24,7 +25,7 @@ class App extends React.Component {
           <Layout />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/doniraj" exact component={Home} />
+            <Route path="/doniraj" exact component={Donate} />
             <Route path="/vijesti" exact component={Home} />
             <Route path="/blog" exact component={Home} />
             <Route path="/galerija" exact component={Home} />
