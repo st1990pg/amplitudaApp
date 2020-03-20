@@ -29,3 +29,7 @@ export const AddressSection = AddressSectionComponent;
 //Contact Us section component
 import ContactUsComponent from "../Page/Home/ContactUsComponent";
 export const ContactUs = ContactUsComponent;
+
+//Tabs component
+import TabsComponent from "./TabsComponent";
+export const Tabs = TabsComponent;

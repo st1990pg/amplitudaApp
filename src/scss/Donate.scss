@@ -7,10 +7,6 @@
     width: 640px;
     float: left;
     margin-top: 60px;
-
-    
-
-    
   }
 
   .img-div {
@@ -52,4 +48,31 @@
     p {
         margin: 28px 0;
     }
+}
+
+.tabs-div {
+  margin: 0 auto;
+  width: 58%;
+
+  .MuiTabs-root {
+    border-radius: 10px;
+  }
+
+  .MuiTab-root {
+    font-size: 24px;
+    text-transform: none;
+    height: 160px;
+    background-color: #dedede;
+    
+    
+  }
+  .Mui-selected {
+    
+    background-image: linear-gradient(to bottom, #06aaca, #00859f);
+    
+   
+  } 
+  .MuiTab-textColorInherit {
+    opacity: 1;
+  }
 }

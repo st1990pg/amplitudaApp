@@ -1,6 +1,9 @@
 import React from "react";
 import Medo from "../../img/medo.png";
 import "../../scss/Donate.scss";
+import { doniraj } from '../../../moc/doniraj';
+import { Tabs } from '../../Components'
+import { Tab } from "@material-ui/core";
 
 class Donate extends React.Component {
   constructor(props) {
@@ -42,6 +45,23 @@ class Donate extends React.Component {
             Pogledaj - odaberi - DONIRAJ i izmamite bar jedan iskren i topao
             dječiji osmijeh.
           </p>
+        </div>
+        <div className="tabs-div">
+          <Tabs></Tabs>
+          {/* <div>
+              <div className="tabs-div">
+                <img src="" alt=""/>
+                <p>Odjeca i obuca</p>
+              </div>
+          </div>
+
+          <div>
+            
+          </div>
+
+          <div>
+            
+          </div> */}
         </div>
       </div>
     );

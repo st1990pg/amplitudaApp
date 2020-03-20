@@ -1,16 +1,20 @@
 export const doniraj = [
   {
     id: 1,
-    name: "Obuca i odjeca",
-    icon: "",
+    name: "Odjeća i Obuća",
+    icon: "../../img/002-shirt.svg",
     items: [
-      { id: 1, name: "Trenerka", valeu: true },
-      { id: 2, name: "Patike", valeu: false }
+      { id: 1, name: "Trenerka", value: true },
+      { id: 3, name: "Majice", value: false },
+      { id: 4, name: "Trik majice", value: false },
+      { id: 5, name: "Donji veš", value: false },
+      { id: 6, name: "Čarape", value: false },
+      { id: 7, name: "Peškiri", value: false }
     ]
   },
   {
     id: 2,
-    name: "Skjolski pribor i igracke",
+    name: "Školski pribor i igračke",
     icon: ""
   },
   {
@@ -19,7 +23,7 @@ export const doniraj = [
     icon: ""
   }
 ];
-const odabrano = [{ id: 1, name: "Trenerka", valeu: true }];
+const odabrano = [{ id: 1, name: "Trenerka", value: true }];
 const posts = [
   {
     id: 1,
@@ -44,11 +48,11 @@ const posts = [
 ];
 
 const dropdown = [
-  { id: 1, valeu: "Test 1" },
-  { id: 2, valeu: "Test 2" },
-  { id: 3, valeu: "Test 3" },
-  { id: 4, valeu: "Test 4" },
-  { id: 5, valeu: "Test 5" }
+  { id: 1, value: "Test 1" },
+  { id: 2, value: "Test 2" },
+  { id: 3, value: "Test 3" },
+  { id: 4, value: "Test 4" },
+  { id: 5, value: "Test 5" }
 ];
 
 export const slider = [
