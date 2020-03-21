@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
-import {ButtonRadius} from "../index";
+import { ButtonRadius } from "../index";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
 
@@ -13,6 +13,10 @@ const DonationComponent = ({ close }) => {
 
   // const [userData, setUserData] = useState(exampleUserData);
   const [donationData, setDonationData] = useState(exampleDonationData);
+
+  function btnColorChange() {
+    console.log(" ");
+  }
 
   return (
     <div className="reservation-overview">
@@ -33,7 +37,7 @@ const DonationComponent = ({ close }) => {
       <div className="reservation-overview_btn">
         <div className="wrapp">
           <div className="left">
-            <button onClick="btnColorChange()" className="odabirPola">
+            <button onClick={btnColorChange()} className="odabirPola">
               <p>
                 <img src={Girl} className="ikonice" />
                 Ženski
@@ -41,7 +45,7 @@ const DonationComponent = ({ close }) => {
             </button>
           </div>
           <div className="right">
-            <button onClick="btnColorChange()" className="odabirPola">
+            <button onClick={btnColorChange()} className="odabirPola">
               <p>
                 <img src={Boy} className="ikonice" />
                 Muški

@@ -1,6 +1,10 @@
 import React from "react";
 import About from "./About";
+<<<<<<< HEAD
 import { ContactUs } from "../../Components";
+=======
+import { ContactUs } from "Components";
+>>>>>>> b528ee69148c93d7c5f25985c7743df0fe48c23a
 import SimpleSlider from "./Slider";
 import BackgroundHeader from "./BackgroundHeader";
 import ModalTriggers from "./ModalTriggers";
