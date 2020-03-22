@@ -3,7 +3,7 @@ import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import InputText from "../InputText";
 import ButtonRadius from "../ButtonRadius";
-import useField from '../../hooks/useField';
+import useField from "../../hooks/useField";
 
 const PersonalInfo = ({ close }) => {
   const [name, setName] = useField();
@@ -11,16 +11,26 @@ const PersonalInfo = ({ close }) => {
   const [phoneNumber, setPhoneNumber] = useField();
   const [lice, setLice] = useState("");
 
-
   const submitValue = () => {
     const formDetails = {
-      Name: name,
-      Email: email,
-      Phone: phoneNumber,
-      Lice: lice
+      Person: {
+        Name: name,
+        Email: email,
+        Phone: phoneNumber,
+        Lice: lice
+      }
     };
     console.log(formDetails);
-    alert("Ime: " + name + ", email: " + email + ", broj telefona: " + phoneNumber + ", lice: " +lice);
+    alert(
+      "Ime: " +
+        name +
+        ", email: " +
+        email +
+        ", broj telefona: " +
+        phoneNumber +
+        ", lice: " +
+        lice
+    );
   };
 
   return (
@@ -40,13 +50,25 @@ const PersonalInfo = ({ close }) => {
       <div className="reservation-overview_btn">
         <div className="wrapp">
           <div className="left">
-            <input type="radio" name="colour" value="pravno" id="colour-blue" onClick={() => setLice('Pravno')} />
+            <input
+              type="radio"
+              name="colour"
+              value="pravno"
+              id="colour-blue"
+              onClick={() => setLice("Pravno")}
+            />
             <label htmlFor="colour-blue">
               <span>Pravno Lice</span>
             </label>
           </div>
           <div className="right">
-            <input type="radio" name="colour" value="gray" id="colour-gray" onClick={() => setLice('Fizicko')}/>
+            <input
+              type="radio"
+              name="colour"
+              value="gray"
+              id="colour-gray"
+              onClick={() => setLice("Fizicko")}
+            />
             <label htmlFor="colour-gray">
               <span>Fizicko Lice</span>
             </label>
@@ -56,12 +78,14 @@ const PersonalInfo = ({ close }) => {
       <div className="reservation-overview__content">
         <div className="content-subsection">
           <InputText
-            label="ime i prezime donatora" value={name}
+            label="ime i prezime donatora"
+            value={name}
             onchange={setName}
           />
           <InputText label="Email" value={email} onchange={setEmail} />
           <InputText
-            label="Broj telefona" value={phoneNumber}
+            label="Broj telefona"
+            value={phoneNumber}
             onchange={setPhoneNumber}
           />
         </div>
@@ -69,7 +93,6 @@ const PersonalInfo = ({ close }) => {
       <div className="reservation-overview__footer">
         <div className="footer__submit">
           <ButtonRadius onclick={submitValue} text="Sledeći korak" />
-          
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
