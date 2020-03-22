@@ -21,13 +21,12 @@ const InputTextComponent = ({label, value, disabled, onchange}) => {
 InputTextComponent.propTypes = {
     label: PropTypes.string.isRequired,
     classes: PropTypes.string,
-    value: PropTypes.string,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    onchange: PropTypes.func
 };
 
 InputTextComponent.defaultProps = {
     label: "placeholder",
-    value: '',
     disabled: false
 };
 
