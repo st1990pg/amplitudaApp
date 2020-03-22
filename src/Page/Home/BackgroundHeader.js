@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonRadius from "../Components/ButtonRadius";
+import {ButtonRadius} from "../../Components";
 
 const BackgroundHeader = () => {
   return (
@@ -27,7 +27,7 @@ const BackgroundHeader = () => {
         </div>
         <div className="row">
           <div className="col-3">
-            <ButtonRadius classes="transparent" text="Doniraj" />
+            <ButtonRadius classes="transparent px-100" text="Doniraj" />
           </div>
         </div>
       </div>

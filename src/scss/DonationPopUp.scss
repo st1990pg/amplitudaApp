@@ -1,0 +1,39 @@
+
+.image img{
+    // width: 80%;
+    display: block;
+    margin: 0 auto;
+    width: 960px;
+    height: 640.5px;
+  
+    
+   
+}
+.donation-popup{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.header{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 72px;
+    height: 250px;
+    padding-top: 170px;
+    
+
+}
+.image1{
+    position: relative;
+}
+
+
+.image1 img{
+    position: absolute;
+    top: -850px;
+    right: 250px;
+
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./About/About";
-import ContactUs from "./ContactUs";
+import About from "./About";
+import { ContactUs } from "Components";
 import SimpleSlider from "./Slider";
-import BackgroundHeader from "../BackgroundHeader";
+import BackgroundHeader from "./BackgroundHeader";
 import ModalTriggers from "./ModalTriggers";
 
 class Home extends React.Component {
@@ -15,10 +15,11 @@ class Home extends React.Component {
         "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     };
   }
+
   render() {
     const { text1, text2 } = this.state;
     return (
-      <div>
+      <div className="home">
         <BackgroundHeader />
         <About text1={text1} text2={text2} />
         <SimpleSlider />

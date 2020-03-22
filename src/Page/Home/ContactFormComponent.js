@@ -1,10 +1,10 @@
 import React from 'react';
-import InputText from "../../Components/InputText";
-import ButtonRadius from "../../Components/ButtonRadius";
+//import InputText from "../../Components/InputText";
+import {ButtonRadius, InputText} from "../../Components";
 import '../../scss/ContactForm.scss';
 import BlueLines from '../../img/blue-lines.svg'
 
-const ContactForm = () => {
+const ContactFormComponent = () => {
     return (
         <div className="ContactForm container">
             <div className="row"><h1>Kontaktiraj nas</h1></div>
@@ -31,10 +31,10 @@ const ContactForm = () => {
                 <InputText label="Poruka"/>
             </div>
             <div className="row form-submit">
-                <ButtonRadius />
+                <ButtonRadius text="Posalji"/>
             </div>
         </div>
     );
 };
 
-export default ContactForm;
+export default ContactFormComponent;

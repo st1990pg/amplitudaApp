@@ -1,9 +1,8 @@
 import React from 'react';
-import ContactForm from "./ContactForm";
-import AddressSection from "./AddressSection";
+import {ContactForm, AddressSection} from "../../Components";
 import '../../scss/ContactUs.scss'
 
-const ContactUs = () => {
+const ContactUsComponent = () => {
     return (
         <div className="ContactUs">
             <div className="row d-flex justify-content-between">
@@ -18,4 +17,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default ContactUsComponent;

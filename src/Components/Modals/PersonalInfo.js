@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
-import InputText from "../InputText";
-import ButtonRadius from "../ButtonRadius";
+import InputText from "../InputTextComponent";
+import ButtonRadius from "../ButtonRadiusComponent";
 import useField from "../../hooks/useField";
 
-const PersonalInfo = ({ close }) => {
+const PersonalInfoComponent = ({ close }) => {
   const [name, setName] = useField();
   const [email, setEmail] = useField();
   const [phoneNumber, setPhoneNumber] = useField();
@@ -102,4 +102,4 @@ const PersonalInfo = ({ close }) => {
   );
 };
 
-export default PersonalInfo;
+export default PersonalInfoComponent;

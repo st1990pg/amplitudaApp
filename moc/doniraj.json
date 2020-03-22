@@ -1,0 +1,38 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "text": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it."
+      },
+      "img": "src/img/Happy-Children.png"
+    },
+    {
+      "id": 2,
+      "text": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it."
+      },
+      "img": "src/img/Happy-Children-Two.png"
+    },
+    {
+      "id": 3,
+      "text": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it."
+      },
+      "img": "src/img/Happy-Children.png"
+    },
+    {
+      "id": 4,
+      "text": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it."
+      },
+      "img": "src/img/Happy-Children-Two.png"
+    }
+  ],
+  "aboutUs": {},
+  "informacije": {}
+}

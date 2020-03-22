@@ -4,7 +4,9 @@ import useField from '../hooks/useField';
 import {ucfirst} from "../Helpers";
 import '../scss/InputText.scss';
 
-const InputText = ({label, value, disabled, onchange}) => {
+const InputTextComponent = ({label, value,onchange, disabled}) => {
+
+    const [fieldValue, onChangeValue] = useField(value);
 
     return (
         <div className="InputText">
@@ -18,17 +20,17 @@ const InputText = ({label, value, disabled, onchange}) => {
     );
 };
 
-InputText.propTypes = {
+InputTextComponent.propTypes = {
     label: PropTypes.string.isRequired,
     classes: PropTypes.string,
     value: PropTypes.string,
     disabled: PropTypes.bool
 };
 
-InputText.defaultProps = {
+InputTextComponent.defaultProps = {
     label: "placeholder",
     value: '',
     disabled: false
 };
 
-export default InputText;
+export default InputTextComponent;
