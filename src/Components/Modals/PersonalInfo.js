@@ -4,24 +4,33 @@ import Cancel from "../../img/cancel.svg";
 import InputText from "../InputTextComponent";
 import ButtonRadius from "../ButtonRadiusComponent";
 import useField from "../../hooks/useField";
+import axios from "axios";
 
-const PersonalInfoComponent = ({ close }) => {
+
+const PersonalInfoComponent = ({close}) => {
+  
   const [name, setName] = useField();
   const [email, setEmail] = useField();
   const [phoneNumber, setPhoneNumber] = useField();
-  const [lice, setLice] = useState("");
+  const [lice, setLice] = useState(""); 
 
   const submitValue = () => {
-    const formDetails = {
-      Person: {
-        Name: name,
-        Email: email,
-        Phone: phoneNumber,
-        Lice: lice
-      }
+    const Person = {
+        name: name,
+        email: email,
+        phone: phoneNumber,
+        lice: lice
     };
-    console.log(formDetails);
-    alert(
+  
+
+    
+    axios.post('/informacije', { Person })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  
+ /*    alert(
       "Ime: " +
         name +
         ", email: " +
@@ -30,7 +39,7 @@ const PersonalInfoComponent = ({ close }) => {
         phoneNumber +
         ", lice: " +
         lice
-    );
+    ); */
   };
 
   return (
@@ -102,4 +111,8 @@ const PersonalInfoComponent = ({ close }) => {
   );
 };
 
+
+
 export default PersonalInfoComponent;
+
+

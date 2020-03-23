@@ -18,6 +18,7 @@ const ModalTriggers = props => {
   const [modalFive, toggleModalFive] = useToggle(false);
   const [modalSix, toggleModalSix] = useToggle(false);
   const [modalSeven, toggleModalSeven] = useToggle(false);
+  
   function delteSLider() {
     props.deleteSlider(2);
   }
