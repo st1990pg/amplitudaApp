@@ -1,0 +1,78 @@
+.rectangle-container {
+    width: 1796px;
+    height: 429px;
+    border-radius: 20px;
+    box-shadow: 0 3px 18px 0 rgba(6, 170, 202, 0.3);
+    background: linear-gradient(243deg, rgba(6,170,202,1) 63%, rgba(0,133,159,1) 73%);
+    display: flex;
+    // flex-direction: row;
+    margin: 0 62px;
+    
+}
+
+.rectangle-container .count,
+.rectangle-container .txt1,
+.rectangle-container .circular,
+.rectangle-container .txt2  {
+    display: inline-block;
+    width: 24%;
+}
+
+.rectangle-container .count {
+    width: 261px;
+  height: 220px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 220px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 170px;
+  margin-left: 210px;
+}
+
+.rectangle-container .txt1 p{
+    width: 258px;
+  height: 189px;
+  font-family: 'Playfair Display', serif;
+  font-size: 57px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.02;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 60px;
+  margin-top: 90px;
+
+
+}
+
+.rectangle-container .circular {
+    width: 307.6px;
+  height: 307.6px;
+//   border: solid 8px var(--white);
+  margin-left: 80px;
+  margin-top: 50px;
+  stroke: white !important;
+  
+
+}
+
+
+.rectangle-container .txt2 p{
+    width: 273px;
+  height: 189px;
+  font-family: 'Playfair Display', serif;
+  font-size: 57px;
+  font-weight: bold;
+  line-height: 1.02;
+  text-align: left;
+  margin-top: 90px;
+  color:white;
+  margin-left: 50px;
+}

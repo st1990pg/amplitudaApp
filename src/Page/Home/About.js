@@ -3,6 +3,10 @@ import Image from "../../img/photo.jpg";
 import Wave from "../../img/Path15.svg";
 import ButtonArrow from "Components/ButtonArrow";
 
+
+import { fetchAbout } from "Actions/aboutAction";
+
+
 const About = props => {
   return (
     <div className="about-container ContactUs">

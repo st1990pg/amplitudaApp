@@ -4,7 +4,7 @@
   background-color: white;
   flex-direction: row;
   margin: 100px 0;
-  
+  height: 70vh;;
 }
 
 .about-container .text,
@@ -26,6 +26,7 @@
      color: #2e3038;
      margin-top: 0;
      margin-bottom: 30px;
+     margin-left: 141px;
    }
 
 .about-container .circle{
@@ -35,6 +36,7 @@
   background-color: #06aaca;
   position: absolute;
   z-index: 0;
+  margin-top: 10%;
 }
    
   
@@ -89,6 +91,7 @@
    .about-container .wave-img{
      width: 53px;
      height: 11px;
+     margin-left: 141px;
    }
 
    .about-container .images img{
@@ -98,10 +101,12 @@
      top: 50%;
      transform: translate(-20%, -50%);
      right: 0;
+     margin-top: 10%;
    }
 
    .button-container{
      padding-left: 52px;
+     margin-left: 141px;
    }
    
 @media only screen and (max-width: 1024px) {
