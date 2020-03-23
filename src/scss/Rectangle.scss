@@ -76,3 +76,23 @@
   color:white;
   margin-left: 50px;
 }
+
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: white;
+  font-size: 60px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+  stroke: white;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke:white;
+  stroke-width: 3;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+  stroke-linecap: round;
+  stroke-width: 2;
+}

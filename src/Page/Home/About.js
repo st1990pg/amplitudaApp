@@ -4,7 +4,7 @@ import Wave from "../../img/Path15.svg";
 import ButtonArrow from "Components/ButtonArrow";
 
 
-import { fetchAbout } from "Actions/aboutAction";
+// import { fetchAbout } from "Actions/aboutAction";
 
 
 const About = props => {
