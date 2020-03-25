@@ -2,7 +2,7 @@ export const doniraj = [
   {
     id: 1,
     name: "Odjeća i Obuća",
-    icon: "../../img/002-shirt.svg",
+    icon: "src/img/002-shirt.svg",
     items: [
       { id: 1, name: "Trenerka", value: true },
       { id: 3, name: "Majice", value: false },
@@ -15,12 +15,25 @@ export const doniraj = [
   {
     id: 2,
     name: "Školski pribor i igračke",
-    icon: ""
+    icon: "src/img/002-stationery.svg",
+    items: [
+      { id: 1, name: "Trenerka", value: true },
+      { id: 3, name: "Majice", value: false },
+      { id: 4, name: "Trik majice", value: false },
+      { id: 5, name: "Donji veš", value: false },
+    ]
   },
   {
     id: 3,
     name: "Higijena",
-    icon: ""
+    icon: "src/img/003-toothbrush.svg",
+    items: [
+      { id: 1, name: "Trenerka", value: true },
+      { id: 4, name: "Trik majice", value: false },
+      { id: 5, name: "Donji veš", value: false },
+      { id: 6, name: "Čarape", value: false },
+      { id: 7, name: "Peškiri", value: false }
+    ]
   }
 ];
 const odabrano = [{ id: 1, name: "Trenerka", value: true }];

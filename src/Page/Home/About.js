@@ -14,11 +14,11 @@ const About = props => {
             <img className="wave-img" src={Wave} alt="photo" />
             <div>
               <p> {props.text1}</p>
-              <p> {props.text2}</p>
+              <p> {props.text2}</p> 
             </div>
           </div>
           <div className="button-container">
-            <ButtonArrow fontSize="2.4rem" link="#" text="Saznaj više" />
+            <ButtonArrow fontSize="2.4rem" link="#" text="Saznaj više" arrowLeft="true" />
           </div>
         </div>
       </div>

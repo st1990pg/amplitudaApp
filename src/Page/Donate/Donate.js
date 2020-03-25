@@ -4,7 +4,7 @@ import "../../scss/Donate.scss";
 import { doniraj } from '../../../moc/doniraj';
 import { Tabs } from '../../Components'
 import { Tab } from "@material-ui/core";
-
+import ButtonRadius from '../../Components/ButtonRadiusComponent';
 class Donate extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +47,21 @@ class Donate extends React.Component {
           </p>
         </div>
         <div className="tabs-div">
-          <Tabs></Tabs>
+          <Tabs className="tabs-section"></Tabs>
+          <div className="odabrano-div">
+            <div className="odabrano-tabela">
+              <p><b>Odabrano: </b></p>
+              <div className="odabrano-lista">
+                {/* placeholder */}
+                <p>Nešto <span className="hide-button">x</span></p>
+                <p>Nešto <span className="hide-button">x</span></p>
+                <p>Nešto <span className="hide-button">x</span></p>
+                <p>Nešto <span className="hide-button">x</span></p>
+                <p>Nešto <span className="hide-button">x</span></p>
+              </div>
+            </div>
+            <ButtonRadius text="Doniraj"></ButtonRadius>
+          </div> 
           {/* <div>
               <div className="tabs-div">
                 <img src="" alt=""/>
