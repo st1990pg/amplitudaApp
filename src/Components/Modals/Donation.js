@@ -6,6 +6,10 @@ import { ButtonRadius } from "../index";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
 
+import { connect } from "react-redux";
+import { fetchDoniraj } from "Actions/donationAction";
+import { Form } from "reactstrap";
+
 const DonationComponent = ({ close }) => {
   const exampleDonationData = {
     uzrast: [1, 2, 3, 4, 5, 6]
@@ -13,10 +17,6 @@ const DonationComponent = ({ close }) => {
 
   // const [userData, setUserData] = useState(exampleUserData);
   const [donationData, setDonationData] = useState(exampleDonationData);
-
-  function btnColorChange() {
-    console.log(" ");
-  }
 
   return (
     <div className="reservation-overview">
@@ -36,21 +36,15 @@ const DonationComponent = ({ close }) => {
       </div>
       <div className="reservation-overview_btn">
         <div className="wrapp">
-          <div className="left">
-            <button onClick={btnColorChange()} className="odabirPola">
-              <p>
-                <img src={Girl} className="ikonice" />
-                Ženski
-              </p>
-            </button>
+          <div className="left odabirPola">
+            <input type="radio" name="girlIcon" className="girlIcon" />
+            <img src={Girl} className="sss" />
+            <p> Ženski </p>
           </div>
-          <div className="right">
-            <button onClick={btnColorChange()} className="odabirPola">
-              <p>
-                <img src={Boy} className="ikonice" />
-                Muški
-              </p>
-            </button>
+          <div className="right odabirPola">
+            <input type="radio" name="boyIcon" className="boyIcon" />
+            <img src={Boy} />
+            <p> Muški </p>
           </div>
         </div>
       </div>

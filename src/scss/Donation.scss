@@ -14,25 +14,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     .odabirPola {
       border: none;
       background-color: white;
       outline: none;
       text-align: center;
       color: #8b92ab;
-    }
+    } 
     .left {
       padding-right: 20px;
+      cursor: pointer;
+      text-align: center;
     }
     .right {
+      cursor: pointer;
       padding-left: 20px;
+      text-align: center;
     }
-    .ikonice{
+    .ikonice1, .ikonice2{
         padding-bottom: 10px;
     }
     .odabirPola:hover, .odabirPola:focus, .odabirPola:active{
         color: #06aaca;
         font-weight: bold;
+    }
+    
+    input[type=radio]:checked + img{
+      -webkit-filter: opacity(.5) drop-shadow(0 0 0 grey);
+      filter: opacity(.5) drop-shadow(0 0 0 grey);
+    }
+    .boyIcon:checked + img{
+      -webkit-filter: opacity(.5) drop-shadow(0 0 0 grey);
+      filter: opacity(.5) drop-shadow(0 0 0 grey);
     }
   }
 }
