@@ -4,5 +4,5 @@ import donationReducer from "./donationReducer";
 
 export default combineReducers({
   slider: sliderReducer,
-  donation: donationReducer
+  donirajPopup: donationReducer
 });

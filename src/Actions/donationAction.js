@@ -1,12 +1,12 @@
 import Axios from "axios";
 
-export const FETCH_DONIRAJ = "FETCH_DONIRAJ ";
+export const FETCH_DONIRAJPOPUP = "FETCH_DONIRAJPOPUP ";
 
-export const fetchDoniraj = () => dispatch => {
-  Axios.get("/doniraj").then(res => {
+export const fetchDonirajPopup = () => dispatch => {
+  Axios.get("/donirajPopup").then(res => {
     debugger;
     dispatch({
-      type: FETCH_DONIRAJ ,
+      type: FETCH_DONIRAJPOPUP ,
       payload: res.data
     });
   });
