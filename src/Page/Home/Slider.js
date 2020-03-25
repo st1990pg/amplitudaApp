@@ -47,9 +47,9 @@ function SamplePrevArrow(props) {
 }
 
 class SimpleSlider extends Component {
-  // componentDidMount() {
-  //   this.props.fetchSlider();
-  // }
+  componentDidMount() {
+    this.props.fetchSlider();
+  }
   render() {
     const settings = {
       arrows: true,
