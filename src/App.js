@@ -21,7 +21,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: LOCALES.ENGLISH
+      locale: LOCALES.FRENCH
     };
   }
   render() {
@@ -41,6 +41,9 @@ class App extends React.Component {
             </button>
             <button onClick={() => this.setState({ locale: LOCALES.FRENCH })}>
               FRENCH
+            </button>
+            <button onClick={() => this.setState({ locale: LOCALES.SERBIAN })}>
+              SERBIAN
             </button>
           <Switch>
             <Route path="/" exact component={Home} />
