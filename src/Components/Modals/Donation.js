@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
 import { ButtonRadius } from "../index";
 import Girl from "../../img/Girl.png";
 import Boy from "../../img/Boy.png";
-import { donirajPopup} from "../../../moc/doniraj";
+import { donirajPopup } from "../../../moc/doniraj";
 import { connect } from "react-redux";
 import { fetchDonirajPopup } from "Actions/donationAction";
 
-const DonationComponent = ({ props }) => {
-  const {donirajPopup, close} = props;
+const DonationComponent = props => {
+console.log(props);
+  const [donirajPopup, setdonirajPopup, close] = useState([]);
+
   useEffect(() => {
     props.fetchDonirajPopup();
   }, []);
@@ -51,17 +53,14 @@ const DonationComponent = ({ props }) => {
          {/*  <DropdownField key="1" title="Uzrast" fields={donationData} />
           <DropdownField key="2" title="Broj" fields={donationData} />
           <DropdownField key="3" title="Količina" fields={donationData} />
-          <DropdownField
-            key="4"
-            title="Cijenovni raspon"
-            fields={donationData}
+          <DropdownField key="4" title="Cijenovni raspon" fields={donationData}
           /> */}
-            {donirajPopup.map(doniraj => {
+            {props.donirajPopup.map(doniranje => {
             return (
               <DropdownField
-                key={doniraj.id}
-                title={doniraj.title}
-                items={doniraj.items}
+                key={doniranje.id}
+                title={doniranje.title}
+                fields={doniranje.items}
               />
             );
           })}
@@ -80,7 +79,7 @@ const DonationComponent = ({ props }) => {
 };
 
 const mapStateToProps = state => ({
-  donirajPopup: state.doniraj.donirajPopup
+  donirajPopup: state.donirajPopup.items
 });
 
-export default connect (mapStateToProps, {fetchDonirajPopup})(DonationComponent);
+export default connect (mapStateToProps, { fetchDonirajPopup })(DonationComponent);

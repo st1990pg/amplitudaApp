@@ -1,7 +1,7 @@
 import { FETCH_DONIRAJPOPUP } from "Actions/donationAction";
 
 const initialState = {
-  donirajPopup: []
+  items: []
 };
 
 export default function(state = initialState, action) {
@@ -9,7 +9,7 @@ export default function(state = initialState, action) {
     case FETCH_DONIRAJPOPUP:
       return {
         ...state,
-        donirajPopup: action.payload
+        items: action.payload
       };
     default:
       return state;
