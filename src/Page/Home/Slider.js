@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import HappyChild1 from "../../img/Happy-Children.png";
-import HappyChild2 from "../../img/Happy-Children-Two.png";
-import { ButtonArrow } from "../../Components";
-import "../../scss/Slider.scss";
+import { ButtonArrow } from "Components";
 import ArrowLeft from "../../img/arrow-left-slider.svg";
 import ArrowRight from "../../img/arrow-right-slider.svg";
 //import Axios from "axios";
 import { connect } from "react-redux";
 import { fetchSlider } from "Actions/sliderAction";
-//import { slider } from "../../../moc/doniraj";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

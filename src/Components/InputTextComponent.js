@@ -4,9 +4,7 @@ import useField from '../hooks/useField';
 import {ucfirst} from "../Helpers";
 import '../scss/InputText.scss';
 
-const InputTextComponent = ({label, value, disabled}) => {
-
-    const [fieldValue, onChangeValue] = useField(value);
+const InputTextComponent = ({label, value, disabled, onchange}) => {
 
     return (
         <div className="InputText">
@@ -14,7 +12,7 @@ const InputTextComponent = ({label, value, disabled}) => {
                 <label className="">{ucfirst(label)}</label>
             </div>
             <div style={{flexGrow: '2'}}>
-                <input type="text" value={fieldValue} onChange={onChangeValue} disabled={disabled}/>
+                <input type="text" value={value} onChange={onchange} disabled={disabled}/>
             </div>
         </div>
     );
@@ -23,13 +21,12 @@ const InputTextComponent = ({label, value, disabled}) => {
 InputTextComponent.propTypes = {
     label: PropTypes.string.isRequired,
     classes: PropTypes.string,
-    value: PropTypes.string,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    onchange: PropTypes.func
 };
 
 InputTextComponent.defaultProps = {
     label: "placeholder",
-    value: '',
     disabled: false
 };
 
