@@ -1,8 +1,13 @@
-import React from "react";
+import React, {Fragment} from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "Components/Header/Layout";
 import Home from "./Page/Home";
 import Footer from "Components/Footer/Footer";
+
+import { IntlProvider, FormattedMessage } from "react-intl";
+import { LOCALES } from "./i18n/constants";
+import message from "./i18n/message";
+import translate from "./i18n/translate";
 
 import { Provider } from "react-redux";
 
@@ -15,13 +20,28 @@ axios.defaults.baseURL = "http://localhost:3000";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      locale: LOCALES.ENGLISH
+    };
   }
   render() {
+    const { locale } = this.state;
+
     return (
       <div className="App">
+        <IntlProvider locale={this.state.locale} 
+        message={message[locale]}
+        textComponent={Fragment}>
         <Provider store={store}>
           <Layout />
+          <h1>{translate("hello", { bold: <span>Test test</span> })}</h1>
+            <h1>{translate("hi")}</h1>
+            <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
+              ENGLISH
+            </button>
+            <button onClick={() => this.setState({ locale: LOCALES.FRENCH })}>
+              FRENCH
+            </button>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/doniraj" exact component={Home} />
@@ -33,6 +53,7 @@ class App extends React.Component {
           </Switch>
           <Footer />
         </Provider>
+        </IntlProvider>
       </div>
     );
   }

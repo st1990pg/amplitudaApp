@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "../../img/photo.jpg";
 import Wave from "../../img/Path15.svg";
 import ButtonArrow from "Components/ButtonArrow";
-
-
-// import { fetchAbout } from "Actions/aboutAction";
+import { fetchAbout } from "Actions/aboutAction";
+import { connect } from "react-redux";
 
 
 const About = props => {
+  const [about, aboutSet] = useState([]);
+  useEffect(() => {
+    props.fetchAbout();
+  }, []);
   return (
     <div className="about-container ContactUs">
       <div className="text">
@@ -34,4 +37,8 @@ const About = props => {
   );
 };
 
-export default About;
+const mapStateToProps = state => ({
+  about: state.aboutUs.items
+});
+
+export default connect(mapStateToProps, { fetchAbout })(About);
