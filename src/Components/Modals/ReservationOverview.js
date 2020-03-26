@@ -4,31 +4,15 @@ import ButtonArrow from "../ButtonArrow";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
 import { ButtonRadius, InputText } from "../index";
-import { donationSelection } from "../../../moc/doniraj";
 import { connect } from "react-redux";
-import { fetchSlider } from "Actions/sliderAction";
+import {fetchUser, fetchItems} from "Actions/donirajAction";
 
-const ReservationOverview = (props, { close }) => {
-  const exampleUserData = {
-    name: "Stefan Nikocevic",
-    email: "nikocevicstefan@gmail.com",
-    phone: "069602930"
-  };
-
+const ReservationOverview = (props) => {
+  const {user, items, close} = props;
   useEffect(() => {
-    props.fetchSlider();
+    props.fetchItems();
+    props.fetchUser();
   }, []);
-
-  const exampleDonationData = {
-    pol: "Zenski",
-    uzrast: "10-12 godina",
-    broj: 33,
-    kolicina: 2,
-    cjenovni_raspon: "20-40"
-  };
-
-  const [userData, setUserData] = useState(exampleUserData);
-  const [donationData, setDonationData] = useState(exampleDonationData);
 
   return (
     <div className="reservation-overview">
@@ -44,13 +28,13 @@ const ReservationOverview = (props, { close }) => {
           </h4>
           <InputText
             label="ime i prezime donatora"
-            value={userData.name}
+            value={user.name}
             disabled={true}
           />
-          <InputText label="Email" value={userData.email} disabled={true} />
+          <InputText label="Email" value={user.email} disabled={true} />
           <InputText
             label="Broj telefona"
-            value={userData.phone}
+            value={user.phone}
             disabled={true}
           />
         </div>
@@ -58,7 +42,7 @@ const ReservationOverview = (props, { close }) => {
           <h4 className="content-subsection__heading">
             Informacije o artiklima:
           </h4>
-          {donationSelection.map(selection => {
+          {items.map(selection => {
             return (
               <DropdownField
                 key={selection.id}
@@ -86,7 +70,8 @@ const ReservationOverview = (props, { close }) => {
 };
 
 const mapStateToProps = state => ({
-  slider: state.slider.items
+  items: state.doniraj.items,
+  user: state.doniraj.user
 });
 
-export default connect(mapStateToProps, { fetchSlider })(ReservationOverview);
+export default connect(mapStateToProps, { fetchUser, fetchItems })(ReservationOverview);
