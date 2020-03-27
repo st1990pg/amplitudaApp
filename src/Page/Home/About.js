@@ -18,7 +18,7 @@ const About = props => {
             </div>
           </div>
           <div className="button-container">
-            <ButtonArrow fontSize="2.4rem" link="#" text="Saznaj više" />
+            <ButtonArrow fontSize="2.4rem" link="#" text="find out more" />
           </div>
         </div>
       </div>

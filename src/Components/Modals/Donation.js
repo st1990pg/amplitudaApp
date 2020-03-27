@@ -68,7 +68,7 @@ const DonationComponent = ({ close }) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="Sledeći korak" />
+          <ButtonRadius text="next step" />
         </div>
         <div className="footer__progress">
           <p>1 od 7</p>
