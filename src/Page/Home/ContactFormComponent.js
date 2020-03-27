@@ -31,7 +31,7 @@ const ContactFormComponent = () => {
                 <InputText label="Poruka"/>
             </div>
             <div className="row form-submit">
-                <ButtonRadius text="Posalji"/>
+                <ButtonRadius text="send"/>
             </div>
         </div>
     );
