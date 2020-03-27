@@ -35,14 +35,17 @@ class App extends React.Component {
         >
           <Provider store={store}>
             <Layout />
-            {/* <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
+           <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
             <h1>{transalte("hi")}</h1>
             <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
               ENGLISH
             </button>
             <button onClick={() => this.setState({ locale: LOCALES.FRENCH })}>
               FRENCH
-            </button> */}
+            </button> 
+            <button onClick={() => this.setState({ locale: LOCALES.SERBIAN })}>
+              SERBIAN
+            </button> 
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/doniraj" exact component={Home} />
