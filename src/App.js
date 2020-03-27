@@ -35,7 +35,7 @@ class App extends React.Component {
         >
           <Provider store={store}>
             <Layout />
-            {/* <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
+         {/*    <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
             <h1>{transalte("hi")}</h1>
             <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
               ENGLISH

@@ -29,12 +29,12 @@
   "informacije": {
     "Person": {
       "name": "Marija Bujisic",
-      "email": "marijabujisic20@gmial,com",
+      "email": "marijabujisic20@gmial.com",
       "phone": "067207921",
       "lice": "Pravno"
     }
   },
- "donationInformation": {
+  "donationInformation": {
     "user": {
       "name": "Stefan Nikocevic",
       "email": "nikocevicstefan@gmail.com",
@@ -42,8 +42,8 @@
     },
     "items": [
       {
-        "id":1,
-        "title":"Trenerke",
+        "id": 1,
+        "title": "Trenerke",
         "description": {
           "pol": "Zenski",
           "uzrast": "10-12 godina",
@@ -53,18 +53,18 @@
         }
       },
       {
-        "id":2,
+        "id": 2,
         "title": "Carape",
-        "description" : {
+        "description": {
           "uzrast": "10-12 godina",
           "kolicina": 2,
           "cjenovni_raspon": "2-4"
         }
       },
       {
-        "id":3,
+        "id": 3,
         "title": "Patike",
-        "description":{
+        "description": {
           "pol": "Muski",
           "uzrast": "7-9 godina",
           "broj": 31,
@@ -73,17 +73,17 @@
         }
       },
       {
-        "id":4,
+        "id": 4,
         "title": "Bojanke",
-        "description":{
+        "description": {
           "kolicina": 3,
           "cjenovni_raspon": "10-20"
         }
       },
       {
-        "id":5,
+        "id": 5,
         "title": "Igracke",
-        "description":{
+        "description": {
           "uzrast": "6-10",
           "kolicina": "10",
           "cjenovni_raspon": "10-20"

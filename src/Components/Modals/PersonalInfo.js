@@ -20,15 +20,14 @@ const PersonalInfoComponent = ({close}) => {
         email: email,
         phone: phoneNumber,
         lice: lice
-    };
-  
-
-    
+    };  
     axios.post('/informacije', { Person })
       .then(res => {
         console.log(res);
         console.log(res.data);
-      })
+      });
+
+      close();
   
  /*    alert(
       "Ime: " +
@@ -101,7 +100,7 @@ const PersonalInfoComponent = ({close}) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius onclick={submitValue} text="Sledeći korak" />
+          <ButtonRadius onclick={submitValue}  text="Sledeći korak" />
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
