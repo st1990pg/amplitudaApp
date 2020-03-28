@@ -15,7 +15,7 @@ const DonationComponent = ({ close }) => {
   const [donationData, setDonationData] = useState(exampleDonationData);
 
   function btnColorChange() {
-    console.log(" ");
+    console.log("Log iz Donation.js");
   }
 
   return (

@@ -64,7 +64,6 @@ class SimpleSlider extends Component {
       nextArrow: <SampleNextArrow />
     };
     const { slider } = this.props;
-    console.log(slider);
     const sliderBody = slider.map((slid, index) => {
       return (
         <div className="slider-div" key={index}>

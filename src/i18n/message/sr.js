@@ -10,6 +10,8 @@ export default {
         "reserve a donation" : "Rezervisi donaciju",
         "find out more":"Saznaj vise",
         "other news":"Ostale vijesti",
-        "previous step" : "Prethodni korak"
+        "previous step" : "Prethodni korak",
+        "modal" : "modal",
+
     }
 };

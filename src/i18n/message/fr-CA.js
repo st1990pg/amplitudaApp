@@ -10,6 +10,7 @@ export default {
     "reserve a donation" : "Réserver un don",
     "find out more" : "En savoir plus",
     "other news" : "Autres actualités",
-    "previous step" : "Étape précédente"
+    "previous step" : "Étape précédente",
+    "modal" : "modal",
   }
 };
