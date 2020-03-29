@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MainHeading from "../MainHeading";
-import ButtonArrow from "../ButtonArrow";
+import ButtonArrow from "../ButtonArrowComponent";
 import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
 import { ButtonRadius, InputText } from "../index";

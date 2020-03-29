@@ -46,7 +46,7 @@ class App extends React.Component {
             </button> */}
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/doniraj" exact component={Home} />
+              <Route path="/doniraj" exact component={Donate} />
               <Route path="/vijesti" exact component={Home} />
               <Route path="/blog" exact component={Home} />
               <Route path="/galerija" exact component={Home} />

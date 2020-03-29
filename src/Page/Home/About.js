@@ -18,11 +18,7 @@ const About = props => {
             </div>
           </div>
           <div className="button-container">
-<<<<<<< HEAD
-            <ButtonArrow fontSize="2.4rem" link="#" text="Saznaj više" arrowLeft="true" />
-=======
             <ButtonArrow fontSize="2.4rem" link="#" text="find out more" />
->>>>>>> master
           </div>
         </div>
       </div>
