@@ -83,9 +83,11 @@ export default function VerticalTabs() {
       <ul className="label-ul">
         {doniraj.items.map((sub) => {
           const [selected, toggleSelected] = useState(false);
+          // const [ref, toggleRef] = useState(false);
           return (
             <>
-              <li className={`labels-li ${selected ? "label-selected" : ""}`} key={sub.id} onClick={() => toggleSelected(!selected)}>
+               <li className={`labels-li ${selected ? "label-selected" : ""}`}  
+              key={sub.id} onClick={() =>  toggleSelected(!selected)}>
                 {sub.name}
                 <img src={strik} className="hide-button" />
               </li>
