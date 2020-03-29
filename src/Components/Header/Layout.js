@@ -4,11 +4,13 @@ import Navigation from './Navigation';
 class Layout extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            color: "#06aaca"
+        };
       }
     render() { 
         return (
-            <div className='nav-wrapper'>
+            <div className='nav-wrapper' style={{ background: this.state.color }}>
                 <Navigation/> 
                 {this.props.children}
             </div>
