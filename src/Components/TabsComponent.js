@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
@@ -6,9 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { doniraj } from "../../moc/doniraj";
-import useToggle from "../hooks/useToggle";
 import strik from '../img/strik.svg';
-//import labelValues from './labelValues';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -68,6 +66,7 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
+
   const tabValues = doniraj.map(doniraj => (
     <div className="tab-div">
       <img src={doniraj.icon} alt="" /><br/>
@@ -76,7 +75,10 @@ export default function VerticalTabs() {
   ));
 
   
-
+    const myRef = useRef();
+    const wrongRef = useRef();
+    useEffect(() => myRef.current && myRef.current.focus(), []);
+    useEffect(() => wrongRef.current  && wrongRef.current.focus(), []); // Imao sam problem sa ternarim operatorom pa sam napravio isti ref koji se nikad ne koristi
   const labelValues = doniraj.map((doniraj) => 
 
       
@@ -86,8 +88,8 @@ export default function VerticalTabs() {
           // const [ref, toggleRef] = useState(false);
           return (
             <>
-               <li className={`labels-li ${selected ? "label-selected" : ""}`}  
-              key={sub.id} onClick={() =>  toggleSelected(!selected)}>
+               <li ref={selected ? myRef : wrongRef} className={`labels-li ${selected ? "label-selected" : ""}`}  
+              key={sub.id} onClick={() => { toggleSelected(!selected); console.log(this.myRef.current.bind(this)) }}>
                 {sub.name}
                 <img src={strik} className="hide-button" />
               </li>
@@ -98,11 +100,6 @@ export default function VerticalTabs() {
         )}
       </ul>
   );
-
-  // {cities.map(city => return <p onClick={() => setActive(true)} 
-  // style={{ color: isActive ? "red" : "green" }}>{city}</p>;)}
-  // {cities.map(city => <p key={city} onClick={() => { setCity(city) }} 
-  // style={{ color: activeCity === city ? "red" : "green" }}>{city}</p>)}
 
   return (
     <div className={classes.root}>

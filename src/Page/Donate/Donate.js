@@ -62,20 +62,7 @@ class Donate extends React.Component {
             </div>
             <ButtonRadius text="Doniraj"></ButtonRadius>
           </div> 
-          {/* <div>
-              <div className="tabs-div">
-                <img src="" alt=""/>
-                <p>Odjeca i obuca</p>
-              </div>
-          </div>
-
-          <div>
-            
-          </div>
-
-          <div>
-            
-          </div> */}
+          
         </div>
       </div>
     );
