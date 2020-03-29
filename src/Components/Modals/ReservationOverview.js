@@ -59,7 +59,7 @@ const ReservationOverview = (props) => {
           <p> nakon čega prelazi u kategoriju slobodnih proizvoda.</p>
         </div>
         <div className="footer__submit">
-          <ButtonRadius text="Rezervisi donaciju" />
+          <ButtonRadius text="reserve a donation" />
         </div>
         <div className="footer__progress">
           <p>7 od 7</p>
