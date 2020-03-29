@@ -28,17 +28,6 @@ const PersonalInfoComponent = ({close}) => {
       });
 
       close();
-  
- /*    alert(
-      "Ime: " +
-        name +
-        ", email: " +
-        email +
-        ", broj telefona: " +
-        phoneNumber +
-        ", lice: " +
-        lice
-    ); */
   };
 
   return (
