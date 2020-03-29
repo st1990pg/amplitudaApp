@@ -1,11 +1,12 @@
 import React from "react";
 import "../scss/ButtonRadius.scss";
 import PropTypes from "prop-types";
+import translate from "../i18n/translate";
 
 const ButtonRadiusComponent = ({ classes, text, onclick }) => {
   return (
     <button type="button" className={`ButtonRadius ${classes}`} onClick={onclick}>
-      {text}
+      {translate(text)}
     </button>
   );
 };
@@ -17,7 +18,7 @@ ButtonRadiusComponent.propTypes = {
 };
 
 ButtonRadiusComponent.defaultProps = {
-  text: "Pošalji"
+  text: "send"
 };
 
 export default ButtonRadiusComponent;

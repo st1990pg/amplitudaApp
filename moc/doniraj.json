@@ -1,26 +1,4 @@
 {
-  "odabrano": [{ "id": 1, "name": "Trenerka", "valeu": true }],
-  "doniraj": [
-    {
-      "id": 1,
-      "name": "Obuca i odjeca",
-      "icon": "",
-      "items": [
-        { "id": 1, "name": "Trenerka", "valeu": true },
-        { "id": 2, "name": "Patike", "valeu": false }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Skjolski pribor i igracke",
-      "icon": ""
-    },
-    {
-      "id": 3,
-      "name": "Higijena",
-      "icon": ""
-    }
-  ],
   "slider": [
     {
       "id": 1,
@@ -54,5 +32,63 @@
       },
       "img": "src/img/Happy-Children-Two.png"
     }
-  ]
+  ],
+  "aboutUs": {},
+  "donationInformation": {
+    "user": {
+      "name": "Stefan Nikocevic",
+      "email": "nikocevicstefan@gmail.com",
+      "phone": "069602930"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "Trenerke",
+        "description": {
+          "pol": "Zenski",
+          "uzrast": "10-12 godina",
+          "broj": 33,
+          "kolicina": 2,
+          "cjenovni_raspon": "20-40"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Carape",
+        "description": {
+          "uzrast": "10-12 godina",
+          "kolicina": 2,
+          "cjenovni_raspon": "2-4"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Patike",
+        "description": {
+          "pol": "Muski",
+          "uzrast": "7-9 godina",
+          "broj": 31,
+          "kolicina": 4,
+          "cjenovni_raspon": "40-80"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Bojanke",
+        "description": {
+          "kolicina": 3,
+          "cjenovni_raspon": "10-20"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Igracke",
+        "description": {
+          "uzrast": "6-10",
+          "kolicina": "10",
+          "cjenovni_raspon": "10-20"
+        }
+      }
+    ]
+  }
 }
