@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import useField from '../hooks/useField';
 import {ucfirst} from "../Helpers";
 import '../scss/InputText.scss';
 
@@ -11,8 +10,8 @@ const InputTextComponent = ({label, value, disabled, onchange}) => {
             <div>
                 <label className="">{ucfirst(label)}</label>
             </div>
-            <div style={{flexGrow: '2'}}>
-                <input type="text" value={value} onChange={onchange} disabled={disabled}/>
+            <div style={{flexGrow: '1'}}>
+                <input type="text" defaultValue={value || ""} onChange={onchange} disabled={disabled}/>
             </div>
         </div>
     );

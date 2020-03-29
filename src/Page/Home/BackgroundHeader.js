@@ -33,28 +33,32 @@ pronaci,na njemu je velikim slovima ispisan grafit`;
             <h3>{translate(text3)}</h3>
             <div className="row">
               <div className="col-4 mb-4">
-              <Button color="info" onClick={() => setLocale(" LOCALES.FRENCH ")}>
-                Francuski
-              </Button>
+                <Button
+                  color="info"
+                  onClick={() => setLocale(" LOCALES.FRENCH ")}
+                >
+                  Francuski
+                </Button>
               </div>
               <div className="col-4 mb-4">
-              <Button color="info" onClick={() => setLocale(" LOCALES.ENGLISH ")}>
-                Engleski
-              </Button>
+                <Button
+                  color="info"
+                  onClick={() => setLocale(" LOCALES.ENGLISH ")}
+                >
+                  Engleski
+                </Button>
               </div>
               <div className="col-4 mb-4">
-              <Button color="info" onClick={() => setLocale(" LOCALES.SERBIAN ")}>
-                Srpski
-              </Button>
+                <Button
+                  color="info"
+                  onClick={() => setLocale(" LOCALES.SERBIAN ")}
+                >
+                  Srpski
+                </Button>
               </div>
             </div>
           </div>
           <div className="col-6"></div>
-        </div>
-        <div className="row">
-          <div className="col-3">
-            <ButtonRadius classes="transparent px-100" text="Doniraj" />
-          </div>
         </div>
       </div>
     </div>

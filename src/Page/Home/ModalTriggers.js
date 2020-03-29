@@ -25,14 +25,17 @@ const ModalTriggers = props => {
 
   return (
     <div className="modal-triggers mt-5">
-      {/*Saljemo funkciju otvaranja modala dugmadima*/}
-      <ButtonRadius text="1 of 7" onclick={toggleModalOne} />
-      <ButtonRadius text="2 of 7" onclick={delteSLider} />
-      <ButtonRadius text="3 of 7" onclick={toggleModalThree} />
-      <ButtonRadius text="4 of 7" onclick={toggleModalFour} />
-      <ButtonRadius text="5 of 7" onclick={toggleModalFive} />
-      <ButtonRadius text="6 of 7" onclick={toggleModalSix} />
-      <ButtonRadius text="7 of 7" onclick={toggleModalSeven} />
+      {/*Saljemo funkciju otvaranja modala dugmadima
+        Promijenio nazive dugmadima jer bi intl package
+        davao 7 gresaka za nepreveden tekst 1 of 7, 2 of 7...
+      */}
+      <ButtonRadius text="modal" onclick={toggleModalOne} />
+      <ButtonRadius text="modal" onclick={delteSLider} />
+      <ButtonRadius text="modal" onclick={toggleModalThree} />
+      <ButtonRadius text="modal" onclick={toggleModalFour} />
+      <ButtonRadius text="modal" onclick={toggleModalFive} />
+      <ButtonRadius text="modal" onclick={toggleModalSix} />
+      <ButtonRadius text="modal" onclick={toggleModalSeven} />
 
       {/*Da dodate novi modal samo ga ubacite u novi ModalWrapper*/}
       <ModalWrapper show={modalSeven}>

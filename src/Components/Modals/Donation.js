@@ -15,7 +15,7 @@ const DonationComponent = ({ close }) => {
   const [donationData, setDonationData] = useState(exampleDonationData);
 
   function btnColorChange() {
-    console.log(" ");
+    console.log("Log iz Donation.js");
   }
 
   return (
@@ -68,7 +68,7 @@ const DonationComponent = ({ close }) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="Sledeći korak" />
+          <ButtonRadius text="next step" />
         </div>
         <div className="footer__progress">
           <p>1 od 7</p>

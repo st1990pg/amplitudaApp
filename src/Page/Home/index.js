@@ -4,6 +4,7 @@ import { ContactUs } from "Components";
 import SimpleSlider from "./Slider";
 import BackgroundHeader from "./BackgroundHeader";
 import ModalTriggers from "./ModalTriggers";
+import SuccessCounters from "./SuccessCounters";
 
 class Home extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <BackgroundHeader />
+        <SuccessCounters />
         <About text1={text1} text2={text2} />
         <SimpleSlider />
         <ContactUs />

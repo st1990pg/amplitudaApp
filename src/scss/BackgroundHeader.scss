@@ -1,31 +1,48 @@
-.main {
+.background-header{
+  margin-top: -13rem;
+
+  padding: 14rem 14rem 0 14rem;
   background-image: url("./img/Group\ 101.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Muli, sans-serif;
+  height: 100vh;
   font-size: 18px;
-  margin-top: -12.5rem;
-  padding-top: 7rem;
-}
-
-.naslov {
   color: white;
-  padding-top: 80px;
-  padding-bottom: 20rem;
-}
+  display: flex;
+  align-items: center;
 
-h3 {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 30px !important;
-}
+  .header__content{
+    *{
+      margin: 2rem 0;
+    }
 
-.paragraf {
-  padding-top: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    max-width: 1000px;
+    justify-content: space-between;
 
-.display-4 {
-  font-size: 60px !important;
+    &__title{
+      display: block;
+      margin-bottom: 10rem;
+    }
+
+    @media screen and (max-width:1024px){
+      max-width: 500px;
+    }
+  }
+
+  .subheading{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4rem;
+  }
+
+  .cta-button{
+    margin-top: -1rem;
+    width: 30%;
+  }
 }
 
 button{
