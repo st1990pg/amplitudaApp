@@ -12,5 +12,13 @@ export default {
     "other news" : "Autres actualités",
     "previous step" : "Étape précédente",
     "modal" : "modal",
+
+    "Home" : "Initiale",
+    "Donation" : "Don",
+    "News": "Actualités",
+    "Blog": "Blog",
+    "Gallery": "Galerie",
+    "Friends": "Amis",
+    "About us": "À propos de nous"
   }
 };

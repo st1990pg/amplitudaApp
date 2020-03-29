@@ -26,6 +26,17 @@ $color-bg: #add8e6;
   .navbar-collapse {
     text-align: center;
   }
+
+  .langDropdown{
+    font-size: 18px;
+    border-radius: 3px;
+    border: solid 2px var(--white);
+    appearance: none; 
+    padding: 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
 }
 
 .navbar-toggler {
