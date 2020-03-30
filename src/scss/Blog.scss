@@ -1,0 +1,100 @@
+.blog-wrapper-div {
+    
+    
+
+    
+    margin-bottom: 4%;
+    margin-top: 1%;
+
+    .blog-post-div {
+        overflow: hidden;
+        padding-left: 7.34%;
+        padding-right: 7.34%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        border-bottom: 1px solid #EDEEF2;
+        .autor-img {
+            display: inline-block;
+            vertical-align: top;
+            width: 49.08%;
+        }
+
+        .blog-text-div {
+            display: inline-block;
+            width: 38.1%;
+            margin-left: 4.33%;
+
+            .autor-div {
+                
+                width: auto;
+                margin-bottom: 20px;
+
+                img  {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 61px;
+                }
+
+                div {
+                    display: inline-block;
+                    margin: 10px 0 0 10px;
+                    .autor-name {
+                        text-transform: uppercase;
+                        opacity: 0.85;
+                        font-family: Muli;
+                        font-size: 18px;
+                        font-weight: 900;
+                        line-height: 1.28;
+                        letter-spacing: 3.6px;
+                        color: #2e3038;
+                        margin: 0;
+                    }
+
+                    .autor-date {
+                        opacity: 0.85;
+                        font-family: Muli;
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 1.29;
+                        color: #8b92ab;
+                    }
+                }
+            }
+
+            .blog-heading {
+                font-family: PlayfairDisplay;
+                font-size: 72px;
+                font-weight: bold;
+                line-height: 1.18;
+                color: #2e3038;
+                margin-bottom: 33px;
+            }
+
+            .blog-p {
+                font-family: Muli;
+                font-size: 18px;
+                line-height: 1.5;
+                color: #8b92ab;
+            }
+
+            .button-radius {
+                margin-top: 20px;
+                background-color: white;
+                color: #06aaca;
+                font-weight: 600;
+                border: solid 1px #06aaca;
+                width: 180px;
+            }
+
+            .button-radius:hover {
+                font-family: Muli, sans-serif;
+                color: white;
+                border: none;
+                background-color: #06aaca;
+                cursor: pointer;
+                outline: none;
+                transition: all .2s;
+            }
+        }
+    }
+}
