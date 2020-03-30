@@ -22,7 +22,6 @@ class Home extends React.Component {
     return (
       <div className="home">
         <BackgroundHeader />
-        <SuccessCounters />
         <About text1={text1} text2={text2} />
         <SimpleSlider />
         <ContactUs />

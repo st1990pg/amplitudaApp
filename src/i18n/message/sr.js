@@ -12,6 +12,6 @@ export default {
         "other news":"Ostale vijesti",
         "previous step" : "Prethodni korak",
         "modal" : "modal",
-
+        "read" : "Procitaj",
     }
 };

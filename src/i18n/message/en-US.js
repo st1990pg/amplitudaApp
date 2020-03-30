@@ -12,5 +12,6 @@ export default {
     "other news" : "Other news",
     "previous step" : "Previous Step",
     "modal" : "modal",
+    "read" : "Read",
   }
 };

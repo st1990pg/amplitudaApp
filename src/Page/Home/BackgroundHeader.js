@@ -19,7 +19,7 @@ const BackgroundHeader = () => {
                     pronaci,na njemu je velikim slovima ispisan grafit NJIHOV OSMIJEH VRIJEDI VISE ! Ispitni rok je, za omladinu iz
                     svih gradova Crne Gore,svake godine u aprilu!
                 </p>
-              <h3 className="subheading">Mi smo spremni,a vi ?</h3>
+              <h3 className="subheading">Mi smo spremni, a vi ?</h3>
               <div className="cta-button">
                 <ButtonRadius classes="transparent" text="donate"/>
               </div>

@@ -12,5 +12,6 @@ export default {
     "other news" : "Autres actualités",
     "previous step" : "Étape précédente",
     "modal" : "modal",
+    "read" : "Lis"
   }
 };

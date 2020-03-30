@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "Components/Header/Layout";
 import Home from "./Page/Home";
+import Blog from './Page/Blog';
 import Footer from "Components/Footer/Footer";
 
 import { IntlProvider, FormattedMessage } from "react-intl";
@@ -46,7 +47,7 @@ class App extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/doniraj" exact component={Home} />
-              <Route path="/vijesti" exact component={Home} />
+              <Route path="/vijesti" exact component={Blog} />
               <Route path="/blog" exact component={Home} />
               <Route path="/galerija" exact component={Home} />
               <Route path="/prijatelji" exact component={Home} />
