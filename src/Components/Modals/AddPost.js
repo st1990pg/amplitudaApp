@@ -10,6 +10,8 @@ import {connect} from "react-redux";
 const AddPost = (props) => {
     const [title, changeTitle] = UseField('');
     const [body, changeBody] = UseField('');
+
+
     const onSubmitHandler = () => {
         const payload = {
             "title":title,
@@ -22,9 +24,9 @@ const AddPost = (props) => {
             "date":"30.03.2020"
         };
         props.makePost(payload);
-        props.postcounter(props.counter + 1);
         props.close();
     };
+
 
     return (
         <div className="add-post-modal">

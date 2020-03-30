@@ -11,8 +11,6 @@ import AddPost from "../../Components/Modals/AddPost";
 
 const Posts = (props) => {
     const [addModal, toggleModal] = useToggle(false);
-    const [counter, setCounter] = useState(props.posts.length);
-
     const {posts} = props;
 
     useEffect(() => {
@@ -25,7 +23,7 @@ const Posts = (props) => {
                 <ButtonRadius text="send" onclick={toggleModal}/>
             </div>
             <ModalWrapper show={addModal}>
-                <AddPost close={toggleModal} postcounter={setCounter} counter={counter}/>
+                <AddPost close={toggleModal} />
             </ModalWrapper>
             {
                 posts.length === 0
