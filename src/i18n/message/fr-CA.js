@@ -19,6 +19,6 @@ export default {
     "Blog": "Blog",
     "Gallery": "Galerie",
     "Friends": "Amis",
-    "About us": "À propos de nous"
+    "AboutUs": "À propos de nous"
   }
 };

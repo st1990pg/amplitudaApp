@@ -19,6 +19,6 @@ export default {
     Blog: "Blog",
     Gallery: "Galerija",
     Friends: "Prijatelji",
-    "About us": "O nama"
+    AboutUs: "O nama"
   }
 };

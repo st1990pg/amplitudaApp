@@ -21,7 +21,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locale: LOCALES.ENGLISH
+      locale: LOCALES.SERBIAN
     };
   }
   render() {

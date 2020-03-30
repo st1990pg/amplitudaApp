@@ -13,12 +13,12 @@ export default {
     "previous step" : "Previous Step",
     "modal" : "modal",
     
-    "Home" : "Home",
-    "Donation" : "Donation",
-    "News": "News",
-    "Blog": "Blog",
-    "Gallery": "Gallery",
-    "Friends": "Friends",
-    "About us": "About us"
+    Home : "Home",
+    Donation : "Donation",
+    News: "News",
+    Blog: "Blog",
+    Gallery: "Gallery",
+    Friends: "Friends",
+    AboutUs: "About us"
   }
 };
