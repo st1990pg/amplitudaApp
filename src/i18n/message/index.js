@@ -1,6 +1,6 @@
 import en from "./en-US";
 import fr from "./fr-CA";
-import sr from "./sr-Latn-ME";
+import sr from "./sr";
 
 
 export default {

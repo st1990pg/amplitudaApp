@@ -34,6 +34,7 @@ const About = props => {
         <img src={Image} alt="photo" />
       </div>
     </div>
+
   );
 };
 

@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import Layout from "Components/Header/Layout";
 import Home from "./Page/Home";
