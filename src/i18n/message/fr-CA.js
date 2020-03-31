@@ -2,23 +2,22 @@ import { LOCALES } from "../constants";
 
 export default {
   [LOCALES.FRENCH]: {
-    hello: "bonzur {bold}",
+    HALLO: "bonzur {bold}",
     hi: "Cao! Kako si danas?",
     donate: "Faire un don",
     send: "Envoyer",
-    "next step" : "L'étape suivante",
-    "reserve a donation" : "Réserver un don",
-    "find out more" : "En savoir plus",
-    "other news" : "Autres actualités",
-    "previous step" : "Étape précédente",
-    "modal" : "modal",
-
-    "Home" : "Initiale",
-    "Donation" : "Don",
-    "News": "Actualités",
-    "Blog": "Blog",
-    "Gallery": "Galerie",
-    "Friends": "Amis",
-    "AboutUs": "À propos de nous"
+    nextStep: "L'étape suivante",
+    reserveDonation: "Réserver un don",
+    findOutMore: "En savoir plus",
+    otherNews: "Autres actualités",
+    previousStep: "Étape précédente",
+    modal: "modal",
+    Home: "Initiale",
+    Donation: "Don",
+    News: "Actualités",
+    Blog: "Blog",
+    Gallery: "Galerie",
+    Friends: "Amis",
+    AboutUs: "À propos de nous"
   }
 };

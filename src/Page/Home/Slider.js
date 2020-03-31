@@ -82,7 +82,7 @@ class SimpleSlider extends Component {
             <h2 className="slider-heading">Vijesti</h2>
             <span className="button-arrow-wrapper">
               <ButtonArrow
-                text="other news"
+                text="otherNews"
                 fontSize="18px"
                 link="#"
               ></ButtonArrow>

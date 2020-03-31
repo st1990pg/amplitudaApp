@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 import { fetchDonirajPopup } from "Actions/donationAction";
 
 const DonationComponent = props => {
-console.log(props);
+  console.log(props);
   const [donirajPopup, setdonirajPopup, close] = useState([]);
 
   useEffect(() => {
@@ -53,12 +53,12 @@ console.log(props);
       </div>
       <div className="reservation-overview__content">
         <div className="content-subsection">
-         {/*  <DropdownField key="1" title="Uzrast" fields={donationData} />
+          {/*  <DropdownField key="1" title="Uzrast" fields={donationData} />
           <DropdownField key="2" title="Broj" fields={donationData} />
           <DropdownField key="3" title="Količina" fields={donationData} />
           <DropdownField key="4" title="Cijenovni raspon" fields={donationData}
           /> */}
-            {props.donirajPopup.map(doniranje => {
+          {props.donirajPopup.map(doniranje => {
             return (
               <DropdownField
                 key={doniranje.id}
@@ -71,7 +71,7 @@ console.log(props);
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="next step" />
+          <ButtonRadius text="nextStep" />
         </div>
         <div className="footer__progress">
           <p>1 od 7</p>
@@ -85,4 +85,6 @@ const mapStateToProps = state => ({
   donirajPopup: state.donirajPopup.items
 });
 
-export default connect (mapStateToProps, { fetchDonirajPopup })(DonationComponent);
+export default connect(mapStateToProps, { fetchDonirajPopup })(
+  DonationComponent
+);

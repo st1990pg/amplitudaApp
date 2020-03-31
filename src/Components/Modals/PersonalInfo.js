@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
-import {ButtonRadius, InputText} from "../index";
+import { ButtonRadius, InputText } from "../index";
 
 const PersonalInfoComponent = ({ close }) => {
   return (
@@ -43,7 +43,7 @@ const PersonalInfoComponent = ({ close }) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="next step" />
+          <ButtonRadius text="nextStep" />
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
