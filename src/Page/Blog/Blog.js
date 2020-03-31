@@ -68,7 +68,7 @@ class Blog extends React.Component {
                 <p className="autor-date">12.02.2019</p>
               </div>
             </div>
-            <h2 className="blog-heading">Naslov bloga u dva reda, naslov bloga</h2>
+            <h2 className="blog-heading">Naslov bloga test 3</h2>
             <p className="blog-p">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
