@@ -6,7 +6,9 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { doniraj } from "../../moc/doniraj";
-import strik from '../img/strik.svg';
+import strik from "../img/strik.svg";
+import { checkDonacija } from "Actions/donirajAction";
+import { connect } from "react-redux";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     height: "auto",
     marginBottom: "30px",
     textAlign: "center",
-    color:"black",
+    color: "black"
   },
   tabs: {
     color: "white",
@@ -54,11 +56,11 @@ const useStyles = makeStyles(theme => ({
     // borderRight: `1px solid ${theme.palette.divider}`,
   },
   tab: {
-    height: "160px",
+    height: "160px"
   }
 }));
 
-export default function VerticalTabs() {
+function VerticalTabs(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -66,40 +68,42 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
-
   const tabValues = doniraj.map(doniraj => (
     <div className="tab-div">
-      <img src={doniraj.icon} alt="" /><br/>
+      <img src={doniraj.icon} alt="" />
+      <br />
       {doniraj.name}
     </div>
   ));
 
-  
-    const myRef = useRef();
-    const wrongRef = useRef();
-    useEffect(() => myRef.current && myRef.current.focus(), []);
-    useEffect(() => wrongRef.current  && wrongRef.current.focus(), []); // Imao sam problem sa ternarim operatorom pa sam napravio isti ref koji se nikad ne koristi
-  const labelValues = doniraj.map((doniraj) => 
-
-      
-      <ul className="label-ul">
-        {doniraj.items.map((sub) => {
-          const [selected, toggleSelected] = useState(false);
-          // const [ref, toggleRef] = useState(false);
-          return (
-            <>
-               <li ref={selected ? myRef : wrongRef} className={`labels-li ${selected ? "label-selected" : ""}`}  
-              key={sub.id} onClick={() => { toggleSelected(!selected); console.log(this.myRef.current.bind(this)) }}>
-                {sub.name}
-                <img src={strik} className="hide-button" />
-              </li>
-            </>
-          );
-        }
-        
-        )}
-      </ul>
-  );
+  const myRef = useRef();
+  const wrongRef = useRef();
+  useEffect(() => myRef.current && myRef.current.focus(), []);
+  useEffect(() => wrongRef.current && wrongRef.current.focus(), []); // Imao sam problem sa ternarim operatorom pa sam napravio isti ref koji se nikad ne koristi
+  const labelValues = doniraj.map(doniraj => (
+    <ul className="label-ul">
+      {doniraj.items.map(sub => {
+        const [selected, toggleSelected] = useState(false);
+        // const [ref, toggleRef] = useState(false);
+        return (
+          <>
+            <li
+              ref={selected ? myRef : wrongRef}
+              className={`labels-li ${selected ? "label-selected" : ""}`}
+              key={sub.id}
+              onClick={() => {
+                toggleSelected(!selected);
+                props.checkDonacija(sub);
+              }}
+            >
+              {sub.name}
+              <img src={strik} className="hide-button" />
+            </li>
+          </>
+        );
+      })}
+    </ul>
+  ));
 
   return (
     <div className={classes.root}>
@@ -115,7 +119,7 @@ export default function VerticalTabs() {
         <Tab label={tabValues[2]} {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-       {labelValues[0]}
+        {labelValues[0]}
       </TabPanel>
       <TabPanel value={value} index={1}>
         {labelValues[1]}
@@ -126,3 +130,5 @@ export default function VerticalTabs() {
     </div>
   );
 }
+
+export default connect(null, { checkDonacija })(VerticalTabs);
