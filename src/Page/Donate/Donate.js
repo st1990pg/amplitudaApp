@@ -1,14 +1,18 @@
 import React from "react";
 import Medo from "../../img/medo.png";
 import "../../scss/Donate.scss";
-import { doniraj } from '../../../moc/doniraj';
-import { Tabs } from '../../Components'
+import { doniraj } from "../../../moc/doniraj";
+import { Tabs } from "Components";
 import { Tab } from "@material-ui/core";
-import ButtonRadius from '../../Components/ButtonRadiusComponent';
+import { connect } from "react-redux";
+import ButtonRadius from "../../Components/ButtonRadiusComponent";
 class Donate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+  componentDidMount() {
+    console.log(this.props.donirano);
   }
   render() {
     return (
@@ -36,10 +40,13 @@ class Donate extends React.Component {
           </div>
         </div>
         <div className="middle-header">
-          <h2 className="donate-heading middle-heading">Šta želite da donirate?</h2>
+          <h2 className="donate-heading middle-heading">
+            Šta želite da donirate?
+          </h2>
           <p className="donate-p">
             Ovdje možeš odabrati kategoriju i pogledati spisak artikala kojima
-            ćemo ove<br/> godine obradovati štićenike Doma "Mladost" u Bijeloj.
+            ćemo ove
+            <br /> godine obradovati štićenike Doma "Mladost" u Bijeloj.
           </p>
           <p className="donate-p">
             Pogledaj - odaberi - DONIRAJ i izmamite bar jedan iskren i topao
@@ -50,23 +57,28 @@ class Donate extends React.Component {
           <Tabs className="tabs-section"></Tabs>
           <div className="odabrano-div">
             <div className="odabrano-tabela">
-              <p><b>Odabrano: </b></p>
+              <p>
+                <b>Odabrano: </b>
+              </p>
               <div className="odabrano-lista">
                 {/* placeholder */}
-                <p>Nešto <span className="hide-button">x</span></p>
-                <p>Nešto <span className="hide-button">x</span></p>
-                <p>Nešto <span className="hide-button">x</span></p>
-                <p>Nešto <span className="hide-button">x</span></p>
-                <p>Nešto <span className="hide-button">x</span></p>
+                {this.props.donirano.map(item => {
+                  return (
+                    <p>
+                      {item.name} <span className="hide-button">x</span>
+                    </p>
+                  );
+                })}
               </div>
             </div>
             <ButtonRadius text="Doniraj"></ButtonRadius>
-          </div> 
-          
+          </div>
         </div>
       </div>
     );
   }
 }
-
-export default Donate;
+const mapStateToProps = state => ({
+  donirano: state.doniraj.donirano
+});
+export default connect(mapStateToProps, {})(Donate);

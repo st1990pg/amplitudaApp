@@ -17,10 +17,10 @@ export const doniraj = [
     name: "Školski pribor i igračke",
     icon: "src/img/002-stationery.svg",
     items: [
-      { id: 1, name: "Trenerka", value: true },
-      { id: 3, name: "Majice", value: false },
-      { id: 4, name: "Trik majice", value: false },
-      { id: 5, name: "Donji veš", value: false },
+      { id: 8, name: "Trenerka", value: true },
+      { id: 9, name: "Majice", value: false },
+      { id: 10, name: "Trik majice", value: false },
+      { id: 11, name: "Donji veš", value: false }
     ]
   },
   {
@@ -28,11 +28,11 @@ export const doniraj = [
     name: "Higijena",
     icon: "src/img/003-toothbrush.svg",
     items: [
-      { id: 1, name: "Trenerka", value: true },
-      { id: 4, name: "Trik majice", value: false },
-      { id: 5, name: "Donji veš", value: false },
-      { id: 6, name: "Čarape", value: false },
-      { id: 7, name: "Peškiri", value: false }
+      { id: 12, name: "Trenerka", value: true },
+      { id: 13, name: "Trik majice", value: false },
+      { id: 15, name: "Donji veš", value: false },
+      { id: 16, name: "Čarape", value: false },
+      { id: 17, name: "Peškiri", value: false }
     ]
   }
 ];
@@ -116,52 +116,52 @@ export const slider = [
 ];
 
 export const donationSelection = [
-    {
-      id:1,
-      title:'Trenerke',
-      description: {
-        pol: 'Zenski',
-        uzrast: '10-12 godina',
-        broj: 33,
-        kolicina: 2,
-        cjenovni_raspon: '20-40'
-      }
-    },
-   {
-     id:2,
-     title: 'Carape',
-     description : {
-       uzrast: '10-12 godina',
-       kolicina: 2,
-       cjenovni_raspon: '2-4'
-     },
-   },
   {
-    id:3,
-    title: 'Patike',
-    description:{
-      pol: 'Muski',
-      uzrast: '7-9 godina',
+    id: 1,
+    title: "Trenerke",
+    description: {
+      pol: "Zenski",
+      uzrast: "10-12 godina",
+      broj: 33,
+      kolicina: 2,
+      cjenovni_raspon: "20-40"
+    }
+  },
+  {
+    id: 2,
+    title: "Carape",
+    description: {
+      uzrast: "10-12 godina",
+      kolicina: 2,
+      cjenovni_raspon: "2-4"
+    }
+  },
+  {
+    id: 3,
+    title: "Patike",
+    description: {
+      pol: "Muski",
+      uzrast: "7-9 godina",
       broj: 31,
       kolicina: 4,
-      cjenovni_raspon: '40-80'
+      cjenovni_raspon: "40-80"
     }
   },
   {
-    id:4,
-    title: 'Bojanke',
-    description:{
+    id: 4,
+    title: "Bojanke",
+    description: {
       kolicina: 3,
-      cjenovni_raspon: '10-20'
+      cjenovni_raspon: "10-20"
     }
   },
   {
-    id:5,
-    title: 'Igracke',
-    description:{
-      uzrast: '6-10',
-      kolicina: '10',
-      cjenovni_raspon: '10-20'
+    id: 5,
+    title: "Igracke",
+    description: {
+      uzrast: "6-10",
+      kolicina: "10",
+      cjenovni_raspon: "10-20"
     }
   }
 ];
