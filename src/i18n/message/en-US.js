@@ -6,12 +6,14 @@ export default {
     hi: "HI! how are you today?",
     donate: "Donate",
     send: "Send",
-    "next step": "Next Step",
-    "reserve a donation": "Reserve a donation",
-    "find out more": "Find out more",
-    "other news": "Other news",
-    "previous step": "Previous Step",
+    nextStep: "Next Step",
+    reserveDonation: "Reserve a donation",
+    findOutMore: "Find out more",
+    otherNews: "Other news",
+    previousStep: "Previous Step",
     modal: "modal",
+    Home: "Home",
+    Donation: "Donation",
     headerText: `There is one life college that is studied by those who have the will to
       for as many honest smiles as possible for children who live without their parents. He
       has been producing the best staff in this field in our country for more than
@@ -21,7 +23,12 @@ export default {
       graphite printed THIS SMILE IS WORTH IT! The exam deadline is, for
       youth from all cities of Montenegro, every year in April!`,
     headerTextH: "We're ready, and you?",
-    "za njih" : "For their smile!",
-    "read" :"Read"
+    zaNjih: "For their smile!",
+    read: "Read",
+    News: "News",
+    Blog: "Blog",
+    Gallery: "Gallery",
+    Friends: "Friends",
+    AboutUs: "About us"
   }
 };
