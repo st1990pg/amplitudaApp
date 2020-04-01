@@ -21,6 +21,7 @@ export default {
       graphite imprimé CE SOURIRE EN VAUT LA peine! La date limite d'examen est, par
       des jeunes de toutes les villes du Monténégro, chaque année en avril!`,
     "headerTextH" : "Nous sommes prêts, et toi?",
-    "za njih": "Pour leur sourire!"
+    "za njih": "Pour leur sourire!",
+    "read": "Lisez-le"
   }
 };

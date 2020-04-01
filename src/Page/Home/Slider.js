@@ -51,6 +51,7 @@ class SimpleSlider extends Component {
     this.props.fetchSlider();
   }
   render() {
+    console.log(this.props)
     const settings = {
       arrows: true,
       dots: false,
@@ -63,7 +64,7 @@ class SimpleSlider extends Component {
       prevArrow: <SamplePrevArrow />,
       nextArrow: <SampleNextArrow />
     };
-    const { slider } = this.props;
+    const  {slider}  = this.props;
     const sliderBody = slider.map((slid, index) => {
       return (
         <div className="slider-div" key={index}>

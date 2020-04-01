@@ -21,6 +21,7 @@ export default {
         ispisan grafit NJIHOV OSMIJEH VRIJEDI VISE ! Ispitni rok je, za
         omladinu iz svih gradova Crne Gore,svake godine u aprilu!`,
         "headerTextH" : "Mi smo spremni,a vi ?",
-        "za njih" : "Za njihov osmjeh!"
+        "za njih" : "Za njihov osmjeh!",
+        "read" : "Pročitaj"
     }
 };

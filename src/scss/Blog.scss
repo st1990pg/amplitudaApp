@@ -1,0 +1,40 @@
+$color-title: #2e3038;
+$color-date: #8b92ab;
+
+.row-wrapper{
+    padding: 3% 7%;
+     .profile{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .name{
+        color: $color-title;
+        font-size: 18px;
+        letter-spacing: 3.6px;
+        font-weight: 900;
+        line-height: 1.29;
+    }
+    .date{
+            color: $color-date;
+            font-size: 14px;
+            line-height: 1.28;
+    }
+    .title{
+        font-size: 60px;
+        color: $color-title;
+        font-weight: bold;
+        line-height: 1.18;
+    }
+
+    .text-paragraph{
+        font-size: 18px;
+        color: $color-date;
+        line-height: 1.5;
+    }
+    
+}
+
+hr{
+    padding: unset !important;
+}
