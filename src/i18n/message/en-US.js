@@ -21,7 +21,14 @@ export default {
       graphite printed THIS SMILE IS WORTH IT! The exam deadline is, for
       youth from all cities of Montenegro, every year in April!`,
     headerTextH: "We're ready, and you?",
-    "za njih" : "For their smile!",
-    "read" :"Read"
+    "za njih": "For their smile!",
+    read: "Read",
+    Home: "Home",
+    Donation: "Donation",
+    News: "News",
+    Blog: "Blog",
+    Gallery: "Gallery",
+    Friends: "Friends",
+    AboutUs: "About us"
   }
 };

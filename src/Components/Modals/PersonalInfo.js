@@ -5,6 +5,7 @@ import InputText from "../InputTextComponent";
 import ButtonRadius from "../ButtonRadiusComponent";
 import useField from "../../hooks/useField";
 import axios from "axios";
+/* import { ButtonRadius, InputText } from "../index"; */
 
 
 const PersonalInfoComponent = ({close}) => {
@@ -29,6 +30,7 @@ const PersonalInfoComponent = ({close}) => {
 
       close();
   };
+
 
   return (
     <div className="reservation-overview">
@@ -89,7 +91,7 @@ const PersonalInfoComponent = ({close}) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius onclick={submitValue}  text="next step" />
+          <ButtonRadius text="nextStep" onclick={submitValue}  />
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
