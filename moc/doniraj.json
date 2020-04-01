@@ -91,5 +91,39 @@
       }
     ]
   },
-  "posts": []
+  "posts": [
+    {
+      "title": "A new post",
+      "body": "A new post",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 1
+    },
+    {
+      "title": "Novi Post",
+      "body": "Novi",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 2
+    },
+    {
+      "title": "Naslov Bloga, dugacak, mozda i 2 reda",
+      "body": "Bacon ipsum dolor amet beef strip steak picanha, swine salami kielbasa jerky beef ribs corned beef prosciutto ground round. Tongue swine t-bone, beef drumstick turducken salami capicola pork loin chislic. Capicola chuck short ribs bacon flank chicken. Short ribs tail bacon landjaeger sirloin ball tip short loin. Capicola prosciutto chuck shankle bacon short ribs. Tongue chicken filet mignon tenderloin ground round jerky ribeye ball tip kielbasa.",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 3
+    }
+  ]
 }

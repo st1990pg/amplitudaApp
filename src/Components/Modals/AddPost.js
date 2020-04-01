@@ -36,7 +36,7 @@ const AddPost = (props) => {
                 <img src={Cancel} alt="cancel_button" onClick={props.close} />
             </div>
             <div className="add-post-modal__content">
-                <InputTextComponent label="Naslov bloga" value={title} onchange={changeTitle}/>
+                <InputTextComponent label="Naslov bloga" value={title} onchange={changeTitle} type="email"/>
                 <InputTextComponent label="Tekst bloga" value={body} onchange={changeBody}/>
             </div>
             <div className="add-post-modal__footer">

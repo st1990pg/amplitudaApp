@@ -26,6 +26,7 @@ const Posts = (props) => {
                 <AddPost close={toggleModal} />
             </ModalWrapper>
             {
+
                 posts.length === 0
                 ? <MainHeading text="No Posts Yet"/>
                 : posts.map(post => <PostItem post={post} key={post.id}/>)

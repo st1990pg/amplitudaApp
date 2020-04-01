@@ -1,10 +1,10 @@
 import React from 'react';
-import BlogImage from "../../img/Happy-Children.png";
 import MainHeading from "../../Components/MainHeading";
 import {ButtonRadius} from "../../Components";
 
 const PostItem = ({post}) => {
     const {img, title, body, author, date} = post;
+    console.log(post);
     return (
         <div className="post-item">
             <div className="post-item__image">

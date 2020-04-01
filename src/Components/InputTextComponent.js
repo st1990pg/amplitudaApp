@@ -3,15 +3,22 @@ import PropTypes from 'prop-types';
 import {ucfirst} from "../Helpers";
 import '../scss/InputText.scss';
 
-const InputTextComponent = ({label, value, disabled, onchange}) => {
-
+const InputTextComponent = (props) => {
+    const {
+        label,
+        value,
+        type = 'text',
+        disabled = 'false',
+        required = 'false',
+        onchange
+    } = props;
     return (
         <div className="InputText">
             <div>
                 <label className="">{ucfirst(label)}</label>
             </div>
             <div style={{flexGrow: '1'}}>
-                <input type="text" defaultValue={value || ""} onChange={onchange} disabled={disabled}/>
+                <input type={type} defaultValue={value || ""} onChange={onchange} disabled={disabled}/>
             </div>
         </div>
     );

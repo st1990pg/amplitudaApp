@@ -47,8 +47,8 @@ class App extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/doniraj" exact component={Home} />
-              <Route path="/vijesti" exact component={Blog} />
-              <Route path="/blog" exact component={Home} />
+              <Route path="/vijesti" exact component={Home} />
+              <Route path="/blog" exact component={Blog} />
               <Route path="/galerija" exact component={Home} />
               <Route path="/prijatelji" exact component={Home} />
               <Route path="/onama" exact component={Home} />
