@@ -86,7 +86,7 @@ const Navigation = props => {
           </Nav>
         </Collapse>
 
-        <select
+       {/*  <select
           onChange={changeLanguage}
           value={lang.value}
           className="langDropdown"
@@ -96,7 +96,7 @@ const Navigation = props => {
               {item.label}
             </option>
           ))}
-        </select>
+        </select> */}
       </Navbar>
     </div>
   );

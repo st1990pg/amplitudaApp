@@ -4,6 +4,7 @@ export default {
   [LOCALES.SERBIAN]: {
     hello: "Zdravo {bold}",
     hi: "ZDRAVO! Kako si?",
+    "Pregled rezervacije": "Pregled rezervacije",
     donate: "Doniraj",
     send: "Posalji",
     donate: "Doniraj",
@@ -25,6 +26,8 @@ export default {
     headerTextH: "Mi smo spremni,a vi ?",
     "za njih": "Za njihov osmjeh!",
     read: "Pročitaj",
+    "Lične informacije" : "Lične informacije",
+    "Trenerka": "Trenerka",
     Home: "Pocetna",
     Donation: "Donacija",
     headerText: `Postoji jedan zivotni fakultet koji studiraju oni koji imaju volju da

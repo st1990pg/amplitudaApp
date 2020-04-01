@@ -10,6 +10,7 @@ import { LOCALES } from "./i18n/constants";
 import message from "./i18n/message";
 import transalte from "./i18n/translate";
 import { connect } from "react-redux";
+import Blog from "./Page/Blog";
 
 import axios from "axios";
 
@@ -52,7 +53,7 @@ class App extends React.Component {
             <Route path="/" exact component={Home} />
             <Route path="/doniraj" exact component={Home} />
             <Route path="/vijesti" exact component={Home} />
-            <Route path="/blog" exact component={Home} />
+            <Route path="/blog" exact component={Blog} />
             <Route path="/galerija" exact component={Home} />
             <Route path="/prijatelji" exact component={Home} />
             <Route path="/onama" exact component={Home} />

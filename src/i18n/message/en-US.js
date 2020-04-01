@@ -4,6 +4,7 @@ export default {
   [LOCALES.ENGLISH]: {
     hello: "Hello {bold}",
     hi: "HI! how are you today?",
+    "Pregled rezervacije": "Revue de réservation",
     donate: "Donate",
     send: "Send",
     nextStep: "Next Step",
@@ -11,6 +12,8 @@ export default {
     findOutMore: "Find out more",
     otherNews: "Other news",
     previousStep: "Previous Step",
+    "Lične informacije": 'Personal info',
+    "Trenerka": 'Trenerka',
     modal: "modal",
     Home: "Home",
     Donation: "Donation",

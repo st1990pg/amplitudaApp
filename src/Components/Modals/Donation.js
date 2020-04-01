@@ -24,7 +24,7 @@ const DonationComponent = props => {
   return (
     <div className="reservation-overview">
       <div className="reservation-overview__heading">
-        <MainHeading text="Donacija:" style={{ flex: 1 }} />
+        <MainHeading text="Donation" style={{ flex: 1 }} />
         <MainHeading text="Trenerka" classes="accent-color" />
         <img src={Cancel} alt="cancel_button" onClick={close} />
       </div>

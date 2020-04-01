@@ -4,6 +4,7 @@ export default {
   [LOCALES.FRENCH]: {
     HALLO: "bonzur {bold}",
     hi: "Cao! Kako si danas?",
+    "Pregled rezervacije": "Booking review",
     donate: "Faire un don",
     send: "Envoyer",
     nextStep: "L'étape suivante",
@@ -13,6 +14,8 @@ export default {
     previousStep: "Étape précédente",
     modal: "modal",
     Home: "Initiale",
+    "Lične informacije": "Personal information",
+    "Trenerka": "Trenerka",
     Donation: "Don",
     headerText: `Il y a un collège de vie qui est étudié par ceux qui ont la volonté de
       pour autant de sourires honnêtes que possible pour les enfants qui vivent sans leurs parents. Il
