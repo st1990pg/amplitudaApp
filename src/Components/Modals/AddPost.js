@@ -11,7 +11,6 @@ const AddPost = (props) => {
     const [title, changeTitle] = UseField('');
     const [body, changeBody] = UseField('');
 
-
     const onSubmitHandler = () => {
         const payload = {
             "title":title,
@@ -27,7 +26,6 @@ const AddPost = (props) => {
         props.close();
     };
 
-
     return (
         <div className="add-post-modal">
             <div className="add-post-modal__heading">
@@ -36,8 +34,12 @@ const AddPost = (props) => {
                 <img src={Cancel} alt="cancel_button" onClick={props.close} />
             </div>
             <div className="add-post-modal__content">
-                <InputTextComponent label="Naslov bloga" value={title} onchange={changeTitle} type="email"/>
-                <InputTextComponent label="Tekst bloga" value={body} onchange={changeBody}/>
+                <div className="content-title">
+                    <InputTextComponent label="Naslov bloga" value={title} onchange={changeTitle} type="email"/>
+                </div>
+                <div className="content-body">
+                    <InputTextComponent label="Tekst bloga" value={body} onchange={changeBody}/>
+                </div>
             </div>
             <div className="add-post-modal__footer">
                 <ButtonRadius text="send" onclick={onSubmitHandler}/>
