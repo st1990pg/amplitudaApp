@@ -4,7 +4,6 @@ import {ButtonRadius} from "../../Components";
 
 const PostItem = ({post}) => {
     const {img, title, body, author, date} = post;
-    console.log(post);
     return (
         <div className="post-item">
             <div className="post-item__image">
@@ -25,7 +24,8 @@ const PostItem = ({post}) => {
                     </div>
                 </div>
                 <div className="content__title">
-                    <MainHeading text={title} classes="black"/>
+                    {/*<MainHeading text={title} classes="black"/>*/}
+                    <h1>{title}</h1>
                 </div>
                 <div className="content__text">
                     <p>{body} </p>

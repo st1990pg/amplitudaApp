@@ -3,29 +3,26 @@ import PropTypes from 'prop-types';
 import {ucfirst} from "Helpers";
 
 
-const TextAreaComponent = ({value, onchange}) => {
+const TextAreaComponent = ({value, onchange, placeholder, rows, cols}) => {
 
     return (
-        <div className="InputText">
-            <div>
-                <label className="">{ucfirst(label)}</label>
-            </div>
+        <div className="textarea-component">
             <div style={{flexGrow: '1'}}>
-                <textarea defaultValue={value || ""} onChange={onchange}></textarea>
+                <textarea defaultValue={value || ""} rows={rows} cols={cols} onChange={onchange} placeholder={placeholder}></textarea>
             </div>
         </div>
     );
 };
 
 TextAreaComponent.propTypes = {
-    classes: PropTypes.string,
-    disabled: PropTypes.bool,
-    onchange: PropTypes.func
+    onchange: PropTypes.func,
+    placeholder: PropTypes.string,
 };
 
 TextAreaComponent.defaultProps = {
-    label: "placeholder",
-    disabled: false
-};
+    placeholder: 'Text Here',
+    rows : 10
+}
+
 
 export default TextAreaComponent;

@@ -3,7 +3,7 @@ import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
 import InputTextComponent from "../InputTextComponent";
 import UseField from "../../hooks/useField";
-import {ButtonRadius} from "../index"
+import {ButtonRadius, TextArea} from "../index"
 import {fetchPosts, makePost} from "Actions/postsAction";
 import {connect} from "react-redux";
 
@@ -38,7 +38,8 @@ const AddPost = (props) => {
                     <InputTextComponent label="Naslov bloga" value={title} onchange={changeTitle} type="email"/>
                 </div>
                 <div className="content-body">
-                    <InputTextComponent label="Tekst bloga" value={body} onchange={changeBody}/>
+                    {/*<InputTextComponent label="Tekst bloga" value={body} onchange={changeBody}/>*/}
+                    <TextArea placeholder="Tekst Bloga" onchange={changeBody}/>
                 </div>
             </div>
             <div className="add-post-modal__footer">
