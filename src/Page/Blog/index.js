@@ -27,8 +27,8 @@ const Posts = (props) => {
             </ModalWrapper>
             {
 
-                posts.length === 0
-                ? <MainHeading text="No Posts Yet"/>
+                posts.length !== 0
+                ? <div className="no-posts"><MainHeading text="No Posts Yet"/></div>
                 : posts.map(post => <PostItem post={post} key={post.id}/>)
             }
         </div>
