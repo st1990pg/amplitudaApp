@@ -9,9 +9,6 @@ import { getLangCurent } from "Actions/navTranlateAction";
 import { LOCALES } from "./i18n/constants";
 import message from "./i18n/message";
 import transalte from "./i18n/translate";
-import Blog from "./Page/Blog";
-
-import { Provider } from "react-redux";
 import { connect } from "react-redux";
 
 import axios from "axios";

@@ -9,6 +9,6 @@ export default combineReducers({
   slider: sliderReducer,
   donirajPopup: donationReducer,
   doniraj: donirajReducer,
-  lang: navTranslateReducer,
-  blogPosts: blogReducer
+  blogPosts: blogReducer,
+  lang: navTranslateReducer
 });

@@ -7,30 +7,26 @@ import useField from "../../hooks/useField";
 import axios from "axios";
 /* import { ButtonRadius, InputText } from "../index"; */
 
-
-const PersonalInfoComponent = ({close}) => {
-  
+const PersonalInfoComponent = ({ close }) => {
   const [name, setName] = useField();
   const [email, setEmail] = useField();
   const [phoneNumber, setPhoneNumber] = useField();
-  const [lice, setLice] = useState(""); 
+  const [lice, setLice] = useState("");
 
   const submitValue = () => {
     const Person = {
-        name: name,
-        email: email,
-        phone: phoneNumber,
-        lice: lice
-    };  
-    axios.post('/informacije', { Person })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      });
+      name: name,
+      email: email,
+      phone: phoneNumber,
+      lice: lice
+    };
+    axios.post("/informacije", { Person }).then(res => {
+      console.log(res);
+      console.log(res.data);
+    });
 
-      close();
+    close();
   };
-
 
   return (
     <div className="reservation-overview">
@@ -91,7 +87,7 @@ const PersonalInfoComponent = ({close}) => {
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="nextStep" onclick={submitValue}  />
+          <ButtonRadius onclick={submitValue} text="nextStep" />
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
@@ -101,8 +97,4 @@ const PersonalInfoComponent = ({close}) => {
   );
 };
 
-
-
 export default PersonalInfoComponent;
-
-
