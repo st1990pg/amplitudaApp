@@ -33,9 +33,14 @@ const Navigation = props => {
 
   return (
     <div>
+<<<<<<< HEAD
       <Navbar expand="md">
         <Logo />
 
+=======
+      <Navbar expand="md"> 
+        <Logo/>
+>>>>>>> master
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
