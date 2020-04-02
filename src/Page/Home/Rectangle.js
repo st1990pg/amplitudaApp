@@ -13,7 +13,8 @@ const Rectangle = props => {
     <div className="count">
       {countUp}
     </div> 
-     
+    <div className="line"> <span></span></div>
+
      <div className="txt1">
        <p>
         {props.txt1}</p>

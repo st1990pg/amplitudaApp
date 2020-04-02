@@ -33,13 +33,58 @@
       "img": "src/img/Happy-Children-Two.png"
     }
   ],
+
+
   "aboutUs": {
-    
+    "items":
+      {
    "text1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
     "text2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "Img": "src/img/photo.jpg"
-      
+  }
+
   },
+
+
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Naslov bloga u dva reda, naslov bloga",
+      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "imgBlog": "src/img/Happy-Children.png",
+
+      "author": {
+        "imgAuthor": "src/img/Happy-Children.png",
+        "name": "PETAR PETROVIĆ",
+        "date": "12.02.2019."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Naslov bloga test 2",
+      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "imgBlog": "src/img/Happy-Children-Two.png",
+
+      "author": {
+        "imgAuthor": "src/img/Happy-Children-Two.png",
+        "name": "MILICA MARKOVIĆ",
+        "date": "20.07.2019."
+      }
+    },
+    {
+      "id": 3,
+      "title": "Naslov bloga tet 3",
+      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "imgBlog": "src/img/Happy-Children-Two.png",
+
+      "author": {
+        "imgAuthor": "src/img/Happy-Children-Two.png",
+        "name": "MILICA MARKOVIĆ",
+        "date": "12.02.2019."
+      }
+    }
+  ],
+
 
 
 
