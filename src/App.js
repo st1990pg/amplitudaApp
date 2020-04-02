@@ -5,37 +5,39 @@ import Home from "./Page/Home";
 import Footer from "Components/Footer/Footer";
 
 import { IntlProvider, FormattedMessage } from "react-intl";
+import { getLangCurent } from "Actions/navTranlateAction";
 import { LOCALES } from "./i18n/constants";
 import message from "./i18n/message";
 import transalte from "./i18n/translate";
-
-import { Provider } from "react-redux";
+import { connect } from "react-redux";
 
 import axios from "axios";
-
-import store from "./store";
 
 axios.defaults.baseURL = "http://localhost:3000";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      locale: LOCALES.SERBIAN
-    };
+    this.state = {};
+  }
+  componentDidMount() {
+    this.props.getLangCurent();
   }
   render() {
-    const { locale } = this.state;
+    const { locale } = this.props;
+    const curentLocation = LOCALES[locale];
+    if (locale === "") {
+      return <h1>LOADER . . .</h1>;
+    }
     return (
       <div className="App">
         <IntlProvider
-          locale={locale}
-          messages={message[locale]}
+          locale={curentLocation}
+          messages={message[curentLocation]}
           textComponent={Fragment}
         >
-          <Provider store={store}>
-            <Layout />
-         {/*    <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
+          <Layout />
+          {/* <h1>{transalte("hello", { bold: <span>Test test</span> })}</h1>
             <h1>{transalte("hi")}</h1>
             <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
               ENGLISH
@@ -46,21 +48,24 @@ class App extends React.Component {
             <button onClick={() => this.setState({ locale: LOCALES.SERBIAN })}>
               SERBIAN
             </button>   */}
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/doniraj" exact component={Home} />
-              <Route path="/vijesti" exact component={Home} />
-              <Route path="/blog" exact component={Home} />
-              <Route path="/galerija" exact component={Home} />
-              <Route path="/prijatelji" exact component={Home} />
-              <Route path="/onama" exact component={Home} />
-            </Switch>
-            <Footer />
-          </Provider>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/doniraj" exact component={Home} />
+            <Route path="/vijesti" exact component={Home} />
+            <Route path="/blog" exact component={Home} />
+            <Route path="/galerija" exact component={Home} />
+            <Route path="/prijatelji" exact component={Home} />
+            <Route path="/onama" exact component={Home} />
+          </Switch>
+          <Footer />
         </IntlProvider>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  locale: state.lang.item
+});
+
+export default connect(mapStateToProps, { getLangCurent })(App);

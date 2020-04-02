@@ -8,7 +8,6 @@ export default {
     send: "Send",
     "next step": "Next Step",
     "reserve a donation": "Reserve a donation",
-<<<<<<< HEAD
     "find out more" : "Find out more",
     "other news" : "Other news",
     "previous step" : "Previous Step",
@@ -16,12 +15,19 @@ export default {
     
     Home : "Home",
     Donation : "Donation",
+    nextStep: "Next Step",
+    reserveDonation: "Reserve a donation",
+    findOutMore: "Find out more",
+    otherNews: "Other news",
+    previousStep: "Previous Step",
+    modal: "modal",
+    Home: "Home",
+    Donation: "Donation",
     News: "News",
     Blog: "Blog",
     Gallery: "Gallery",
     Friends: "Friends",
-    AboutUs: "About us"
-=======
+    AboutUs: "About us",
     "find out more": "Find out more",
     "other news": "Other news",
     "previous step": "Previous Step",
@@ -36,6 +42,5 @@ export default {
       youth from all cities of Montenegro, every year in April!`,
     headerTextH: "We're ready, and you?",
     "za njih" : "For their smile!"
->>>>>>> master
   }
 };

@@ -5,10 +5,10 @@ import Cancel from "../../img/cancel.svg";
 import DropdownField from "../DropdownField";
 import { ButtonRadius, InputText } from "../index";
 import { connect } from "react-redux";
-import {fetchUser, fetchItems} from "Actions/donirajAction";
+import { fetchUser, fetchItems } from "Actions/donirajAction";
 
-const ReservationOverview = (props) => {
-  const {user, items, close} = props;
+const ReservationOverview = props => {
+  const { user, items, close } = props;
   useEffect(() => {
     props.fetchItems();
     props.fetchUser();
@@ -32,11 +32,7 @@ const ReservationOverview = (props) => {
             disabled={true}
           />
           <InputText label="Email" value={user.email} disabled={true} />
-          <InputText
-            label="Broj telefona"
-            value={user.phone}
-            disabled={true}
-          />
+          <InputText label="Broj telefona" value={user.phone} disabled={true} />
         </div>
         <div className="content-subsection">
           <h4 className="content-subsection__heading">
@@ -59,7 +55,7 @@ const ReservationOverview = (props) => {
           <p> nakon čega prelazi u kategoriju slobodnih proizvoda.</p>
         </div>
         <div className="footer__submit">
-          <ButtonRadius text="reserve a donation" />
+          <ButtonRadius text="reserveDonation" />
         </div>
         <div className="footer__progress">
           <p>7 od 7</p>
@@ -74,4 +70,6 @@ const mapStateToProps = state => ({
   user: state.doniraj.user
 });
 
-export default connect(mapStateToProps, { fetchUser, fetchItems })(ReservationOverview);
+export default connect(mapStateToProps, { fetchUser, fetchItems })(
+  ReservationOverview
+);

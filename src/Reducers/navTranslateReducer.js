@@ -1,7 +1,7 @@
-import { FETCH_NAV_TRANSLATE } from "Actions/navTranlateAction";
+import { FETCH_NAV_TRANSLATE, GET_LANG } from "Actions/navTranlateAction";
 
 const initialState = {
-  items: []
+  item: ""
 };
 
 export default function(state = initialState, action) {
@@ -9,7 +9,12 @@ export default function(state = initialState, action) {
     case FETCH_NAV_TRANSLATE:
       return {
         ...state,
-        items: action.payload
+        item: action.payload
+      };
+    case FETCH_NAV_TRANSLATE:
+      return {
+        ...state,
+        item: action.payload
       };
     default:
       return state;
