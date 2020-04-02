@@ -1,0 +1,66 @@
+.success-counters{
+  margin: -7rem auto 0 auto;
+  width: 90%;
+  height: 42rem;
+  background: linear-gradient(to right,#00859f, #06aaca);
+  color: white;
+  font-family: 'Playfair Display', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0 10rem;
+
+  .articles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 23rem;
+
+    &__counter{
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22rem;
+    }
+    &__line{
+      background: white;
+      width: 2px;
+      height: 16rem;
+      margin: -1rem 2rem 0 2rem;
+    }
+    &__text{
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 1.02;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .smiles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .CircularProgressbar-text {
+      fill: yellow;
+    }
+
+    &__counter{
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 23rem;
+      width: 35rem;
+      height: 35rem;
+      text-align: center;
+      border-radius: 50%;
+      border: 6px solid white;
+      margin-right: 5rem;
+    }
+
+    &__text{
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 1.02;
+      padding-bottom: 2rem;
+    }
+  }
+
+}

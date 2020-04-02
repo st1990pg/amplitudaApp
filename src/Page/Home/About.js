@@ -4,13 +4,15 @@ import Wave from "../../img/Path15.svg";
 import ButtonArrow from "Components/ButtonArrow";
 import { fetchAbout } from "Actions/aboutAction";
 import { connect } from "react-redux";
-
+import translate from "../../i18n/translate";
 
 const About = props => {
   const [about, aboutSet] = useState([]);
   useEffect(() => {
     props.fetchAbout();
   }, []);
+  const text1= "text1";
+  const text2="text2";
   return (
     <div className="about-container ContactUs">
       <div className="text">
@@ -20,12 +22,12 @@ const About = props => {
           <div className="paragraph">
             <img className="wave-img" src={Wave} alt="photo" />
             <div>
-              <p> {props.text1}</p>
-              <p> {props.text2}</p>
+              <p> {translate(props.text1)}</p>
+              <p> {translate(props.text2)}</p>
             </div>
           </div>
           <div className="button-container">
-            <ButtonArrow fontSize="2.4rem" link="#" text="Saznaj više" />
+            <ButtonArrow fontSize="2.4rem" link="#" text="find out more" />
           </div>
         </div>
       </div>

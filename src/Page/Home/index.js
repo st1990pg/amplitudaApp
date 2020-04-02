@@ -5,8 +5,8 @@ import { ContactUs } from "Components";
 import SimpleSlider from "./Slider";
 import BackgroundHeader from "./BackgroundHeader";
 import ModalTriggers from "./ModalTriggers";
-
 class Home extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {

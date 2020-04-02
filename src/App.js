@@ -29,12 +29,14 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <IntlProvider locale={this.state.locale} 
-        message={message[locale]}
-        textComponent={Fragment}>
-        <Provider store={store}>
-          <Layout />
-          <h1>{translate("hello", { bold: <span>Test test</span> })}</h1>
+        <IntlProvider
+          locale={locale}
+          messages={message[locale]}
+          textComponent={Fragment}
+        >
+          <Provider store={store}>
+            <Layout />
+             <h1>{translate("hello", { bold: <span>Test test</span> })}</h1>
             <h1>{translate("hi")}</h1>
             <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
               ENGLISH

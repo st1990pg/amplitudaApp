@@ -1,9 +1,35 @@
 import React, { useState } from "react";
 import MainHeading from "../MainHeading";
 import Cancel from "../../img/cancel.svg";
-import {ButtonRadius, InputText} from "../index";
+import InputText from "../InputTextComponent";
+import ButtonRadius from "../ButtonRadiusComponent";
+import useField from "../../hooks/useField";
+import axios from "axios";
 
-const PersonalInfoComponent = ({ close }) => {
+
+const PersonalInfoComponent = ({close}) => {
+  
+  const [name, setName] = useField();
+  const [email, setEmail] = useField();
+  const [phoneNumber, setPhoneNumber] = useField();
+  const [lice, setLice] = useState(""); 
+
+  const submitValue = () => {
+    const Person = {
+        name: name,
+        email: email,
+        phone: phoneNumber,
+        lice: lice
+    };  
+    axios.post('/informacije', { Person })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      });
+
+      close();
+  };
+
   return (
     <div className="reservation-overview">
       <div className="reservation-overview__heading">
@@ -21,13 +47,25 @@ const PersonalInfoComponent = ({ close }) => {
       <div className="reservation-overview_btn">
         <div className="wrapp">
           <div className="left">
-            <input type="radio" name="colour" value="blue" id="colour-blue" />
+            <input
+              type="radio"
+              name="colour"
+              value="pravno"
+              id="colour-blue"
+              onClick={() => setLice("Pravno")}
+            />
             <label htmlFor="colour-blue">
               <span>Pravno Lice</span>
             </label>
           </div>
           <div className="right">
-            <input type="radio" name="colour" value="gray" id="colour-gray" />
+            <input
+              type="radio"
+              name="colour"
+              value="gray"
+              id="colour-gray"
+              onClick={() => setLice("Fizicko")}
+            />
             <label htmlFor="colour-gray">
               <span>Fizicko Lice</span>
             </label>
@@ -36,14 +74,22 @@ const PersonalInfoComponent = ({ close }) => {
       </div>
       <div className="reservation-overview__content">
         <div className="content-subsection">
-          <InputText label="ime i prezime donatora" />
-          <InputText label="Email" />
-          <InputText label="Broj telefona" />
+          <InputText
+            label="ime i prezime donatora"
+            value={name}
+            onchange={setName}
+          />
+          <InputText label="Email" value={email} onchange={setEmail} />
+          <InputText
+            label="Broj telefona"
+            value={phoneNumber}
+            onchange={setPhoneNumber}
+          />
         </div>
       </div>
       <div className="reservation-overview__footer">
         <div className="footer__submit">
-          <ButtonRadius text="Sledeći korak" />
+          <ButtonRadius onclick={submitValue}  text="next step" />
         </div>
         <div className="footer__progress">
           <p>6 od 7</p>
@@ -53,4 +99,8 @@ const PersonalInfoComponent = ({ close }) => {
   );
 };
 
+
+
 export default PersonalInfoComponent;
+
+
