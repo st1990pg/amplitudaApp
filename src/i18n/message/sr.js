@@ -28,6 +28,7 @@ export default {
     read: "Pročitaj",
     "Lične informacije" : "Lične informacije",
     "Trenerka": "Trenerka",
+    "Post": "Post",
     Home: "Pocetna",
     Donation: "Donacija",
     headerText: `Postoji jedan zivotni fakultet koji studiraju oni koji imaju volju da

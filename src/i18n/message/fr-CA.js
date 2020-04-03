@@ -16,6 +16,7 @@ export default {
     Home: "Initiale",
     "Lične informacije": "Personal information",
     "Trenerka": "Trenerka",
+    "Post": "Post",
     Donation: "Don",
     headerText: `Il y a un collège de vie qui est étudié par ceux qui ont la volonté de
       pour autant de sourires honnêtes que possible pour les enfants qui vivent sans leurs parents. Il

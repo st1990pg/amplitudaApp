@@ -2,9 +2,10 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 import ButtonRadiusComponent from "Components/ButtonRadiusComponent";
 
+
 const Blog = ({propsBlog}) => {
 
- console.log(propsBlog)
+/*  console.log(propsBlog) */
   return (
     <div>
       <div className="row-wrapper">
@@ -33,7 +34,7 @@ const Blog = ({propsBlog}) => {
               </Col>
             </Row>
             <Row className="mt-4">
-              <Col md="5" lg="5">
+              <Col md="4">
                 <ButtonRadiusComponent classes="transparent blue" text="read" />
               </Col>
             </Row>

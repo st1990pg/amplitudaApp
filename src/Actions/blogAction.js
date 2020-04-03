@@ -1,7 +1,7 @@
 import Axios from "axios";
 
-export const FETCH_BLOG = "FETCH_SLIDER";
-
+export const FETCH_BLOG = "FETCH_BLOG";
+export const MAKE_BLOG = "MAKE_BLOG";
 
 export const fetchBlog = () => dispatch => {
   Axios.get("/blogs").then(res => {
@@ -12,12 +12,11 @@ export const fetchBlog = () => dispatch => {
   });
 };
 
-export const makeBlog = (payload) => dispatch => {
-  axios.post('/blogs', payload)
-      .then(res => {
-          dispatch({
-              type:MAKE_BLOG,
-              payload: payload
-          })
-      })
+export const makeBlog = (blog) => dispatch => {
+  axios.post("/blogs", blog).then(res => {
+    dispatch({
+      type: MAKE_BLOG,
+      payload: blog
+    });
+  });
 };

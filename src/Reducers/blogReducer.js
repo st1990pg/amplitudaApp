@@ -1,4 +1,4 @@
-import { FETCH_BLOG, MAKE_BLOG } from "Actions/blogAction";
+import { FETCH_BLOG , MAKE_BLOG  } from "Actions/blogAction";
 
 
 const initialState = {
@@ -13,11 +13,11 @@ export default function(state = initialState, action) {
         ...state,
         blogs: action.payload
       };
-    case MAKE_BLOG:
+     case MAKE_BLOG:
       return {
         ...state,
-        blogs: [...state.posts, action.payload]
-      };
+        blogs: [...state.blogs, action.payload]
+      }; 
     default:
       return state;
   }

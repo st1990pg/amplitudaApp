@@ -14,6 +14,7 @@ export default {
     previousStep: "Previous Step",
     "Lične informacije": 'Personal info',
     "Trenerka": 'Trenerka',
+    "Post": "Post",
     modal: "modal",
     Home: "Home",
     Donation: "Donation",
