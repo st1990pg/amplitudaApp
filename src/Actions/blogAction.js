@@ -13,7 +13,8 @@ export const fetchBlog = () => dispatch => {
 };
 
 export const makeBlog = (blog) => dispatch => {
-  axios.post("/blogs", blog).then(res => {
+  console.log(blog)
+  Axios.post("/blogs", blog).then(res => {
     dispatch({
       type: MAKE_BLOG,
       payload: blog

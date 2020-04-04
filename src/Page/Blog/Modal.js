@@ -5,13 +5,16 @@ import InputTextComponent from "../../Components/InputTextComponent";
 import UseField from "../../hooks/useField";
 import TextArea from "../../Components/TextAreaComponent";
 import ButtonRadius from "../../Components/ButtonRadiusComponent";
- import { makeBlog } from "Actions/blogAction";
+import { makeBlog } from "Actions/blogAction";
 import { connect } from "react-redux"; 
 import axios from "axios";
 
 import "./Modal.scss";
 
-const Modal = ({ handleClose, show }) => {
+const Modal = (/* { handleClose, show } */ props) => {
+
+  
+  const { handleClose, show } = props;
 
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
@@ -29,7 +32,7 @@ const Modal = ({ handleClose, show }) => {
         create: "30.03.2020"
       }  
     };
-    console.log(blog);
+/*     console.log(blog); */
 /* 
     axios.post('/blogs', { blog })
       .then(res => {
@@ -37,8 +40,7 @@ const Modal = ({ handleClose, show }) => {
         console.log(res.data);
       }); */
 
-    console.log(makeBlog());
-    makeBlog(blog);
+    props.makeBlog(blog);
     handleClose();
   };
 
