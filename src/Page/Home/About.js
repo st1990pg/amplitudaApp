@@ -13,17 +13,18 @@ const About = props => {
   }, []);
   const text1= "text1";
   const text2="text2";
+  const title="title";
   return (
     <div className="about-container ContactUs">
       <div className="text">
         <div className="text-container">
-          <h2 className="header">Ko smo mi?</h2>
+  <h2 className="header">{translate(title)}</h2>
 
           <div className="paragraph">
             <img className="wave-img" src={Wave} alt="photo" />
             <div>
-              <p> {translate(props.text1)}</p>
-              <p> {translate(props.text2)}</p>
+              <p> {translate(text1)}</p>
+              <p> {translate(text2)}</p>
             </div>
           </div>
           <div className="button-container">

@@ -23,7 +23,10 @@ export default {
     "headerTextH" : "Nous sommes prêts, et toi?",
     "za njih": "Pour leur sourire!",
     "text1": "Lorem Ipsum est simplement faux texte de l'industrie de l'imprimerie et de la composition. Lorem Ipsum a été l'industrie texte de mannequin norme depuis les années 1500, quand une imprimante inconnu a une cuisine de type et de texte pour rendre le livre d'un type.",
-    "text2": "Il a non seulement survécu à cinq siècles, mais aussi le saut dans la composition électronique, restées pratiquement inchangées. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages Lorem Ipsum, et plus récemment avec le logiciel de publication assistée par ordinateur, comme Aldus PageMaker y compris les versions de Lorem Ipsum."
+    "text2": "Il a non seulement survécu à cinq siècles, mais aussi le saut dans la composition électronique, restées pratiquement inchangées. Il a été popularisé dans les années 1960 avec la sortie de feuilles Letraset contenant des passages Lorem Ipsum, et plus récemment avec le logiciel de publication assistée par ordinateur, comme Aldus PageMaker y compris les versions de Lorem Ipsum.",
+    "title": "Qui sommes nous?",
+    "txt1": "Le nombre d'articles donnes",
+    "txt2": "Le nombre de sourires atteints"
 
   }
 };

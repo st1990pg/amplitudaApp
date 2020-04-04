@@ -3,10 +3,12 @@ import { render } from "react-dom";
 import { useCountUp } from 'react-countup';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
+import translate from "../../i18n/translate";
 const Rectangle = props => {
     const { countUp } = useCountUp({ end: 296 });
     const percentage=73;
+    const txt1="txt1";
+    const txt2= "txt2";
     return(
  <div className="rectangle-container">
 
@@ -17,7 +19,7 @@ const Rectangle = props => {
 
      <div className="txt1">
        <p>
-        {props.txt1}</p>
+        {translate(txt1)}</p>
    </div>
     
     
@@ -26,7 +28,7 @@ const Rectangle = props => {
   </div> 
         
   <div className="txt2">
-     <p> {props.txt2}</p>
+     <p> {translate(txt2)}</p>
   </div>
    
  </div>
