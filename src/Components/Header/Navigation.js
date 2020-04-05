@@ -7,8 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  Form
+  NavLink
 } from "reactstrap";
 
 import { connect } from "react-redux";
@@ -42,14 +41,8 @@ const Navigation = props => {
 
   return (
     <div>
-<<<<<<< HEAD
-      <Navbar expand="md">
-        <Logo />
-
-=======
       <Navbar expand="md"> 
         <Logo/>
->>>>>>> master
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -92,9 +85,9 @@ const Navigation = props => {
         </Collapse>
 
         <select
-          onChange={changeLanguage}
+         /*  onChange={changeLanguage}
           value={lang.value}
-          className="langDropdown"
+          className="langDropdown" */
         >
           {items.map(item => (
             <option value={item.value} key={item.value}>

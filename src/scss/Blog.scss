@@ -1,0 +1,39 @@
+
+.wrapp {
+  margin: 6rem 0;
+
+  .happyChildren {
+    height: 40rem;
+  }
+  .ikonica {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+  }
+  .username {
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: left;
+    font-size: 22px;
+  }
+  .date {
+    font-size: 14px;
+    color: #8b92ab;
+  }
+  .naslov1 {
+    font-size: 45px;
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.18;
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+  .tekst1 {
+    font-size: 13px;
+    color: #8b92ab;
+    text-align: left;
+  }
+}
+
+.decoration{
+    border-top: 1px solid rgb(221, 221, 221);
+}

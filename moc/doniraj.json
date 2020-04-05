@@ -25,27 +25,34 @@
       "img": "src/img/Happy-Children-Two.png"
     }
   ],
-
-  "donirajPopup":[
+  "donirajPopup": [
     {
       "id": 1,
       "title": "Uzrast",
-      "items": ["1-5, 5-10, 10-15"]
+      "items": [
+        "1-5, 5-10, 10-15"
+      ]
     },
     {
-      "id":2,
+      "id": 2,
       "title": "Broj",
-      "items": ["1 2 3 4 5 6"]
+      "items": [
+        "1 2 3 4 5 6"
+      ]
     },
     {
       "id": 3,
       "title": "Kolicina",
-      "items":[ "10, 11, 12"]
+      "items": [
+        "10, 11, 12"
+      ]
     },
     {
       "id": 4,
       "title": "Cijenovni raspon",
-      "items": ["10-15, 15-20, 20-25"]
+      "items": [
+        "10-15, 15-20, 20-25"
+      ]
     }
   ],
   "aboutUs": {},
@@ -114,7 +121,7 @@
       }
     ]
   },
-  "blog": [
+  "blogs": [
     {
       "id": 1,
       "title": "Naslov bloga u dva reda, naslov bloga",
@@ -124,7 +131,7 @@
         "profile": "src/img/Happy-Children.png",
         "name": "PETAR PETROVIĆ",
         "create": "12.02.2019."
-        }
+      }
     },
     {
       "id": 2,
@@ -137,16 +144,27 @@
         "create": "12.02.2019."
       }
     },
-      {
-        "id": 3,
-        "title": "Naslov bloga test 3",
-        "imgBlog": "src/img/Happy-Children-Two.png",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
-        "autor": {
-          "profile":"",
-          "name": "MILICA MARKOVIĆ",
-          "create": "12.02.2019."
-        }
+    {
+      "id": 3,
+      "title": "Naslov bloga test 3",
+      "imgBlog": "src/img/Happy-Children-Two.png",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "autor": {
+        "profile": "",
+        "name": "MILICA MARKOVIĆ",
+        "create": "12.02.2019."
       }
+    },
+    {
+      "title": "ssasa",
+      "imgBlog": "src/img/Happy-Children.png",
+      "text": "sasasas",
+      "autor": {
+        "profile": "src/img/Happy-Children.png",
+        "name": "Milica Markovic",
+        "create": "30.03.2020"
+      },
+      "id": 4
+    }
   ]
 }

@@ -1,7 +1,6 @@
 import { LOCALES } from "../constants";
 
 export default {
-<<<<<<< HEAD
   [LOCALES.SERBIAN]: {
     hello: "Zdravo {bold}",
     hi: "ZDRAVO! Kako si?",
@@ -19,20 +18,8 @@ export default {
     Blog: "Blog",
     Gallery: "Galerija",
     Friends: "Prijatelji",
-    AboutUs: "O nama"
-  }
-=======
-    [LOCALES.SERBIAN]: {
-        hello: "Zdravo {bold}",
-        hi: "ZDRAVO! Kako si?",
-        donate: "Doniraj",
-        send: "Posalji",
-        "next step": "Sledeći korak",
-        "reserve a donation" : "Rezervisi donaciju",
-        "find out more":"Saznaj vise",
-        "other news":"Ostale vijesti",
-        "previous step" : "Prethodni korak",
-        "modal" : "modal",
+    AboutUs: "O nama",
+    
         "headerText": `Postoji jedan zivotni fakultet koji studiraju oni koji imaju volju da
         izmame sto vise iskrenih osmijeha djeci koja zive bez roditelja. On
         proizvodi najbolje kadrove iz ove oblasti u nasoj zemlji vec duze od
@@ -44,5 +31,4 @@ export default {
         "headerTextH" : "Mi smo spremni,a vi ?",
         "za njih" : "Za njihov osmjeh!"
     }
->>>>>>> master
 };
