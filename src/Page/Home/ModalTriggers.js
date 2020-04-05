@@ -7,6 +7,7 @@ import ModalWrapper from "../../Components/Modals/ModalWrapper";
 import DonationPopUp from "../../Components/Modals/DonationPopUp";
 import { connect } from "react-redux";
 import { deleteSlider } from "Actions/sliderAction";
+import Blog from "../Blog/Blog";
 
 const ModalTriggers = props => {
   //otvara/zatvara modale
@@ -54,6 +55,10 @@ const ModalTriggers = props => {
 
       <ModalWrapper show={modalFour}>
         <DonationPopUp close={toggleModalFour} />
+      </ModalWrapper>
+
+      <ModalWrapper show={modalThree}>
+        <Blog close={toggleModalThree} />
       </ModalWrapper>
     </div>
   );

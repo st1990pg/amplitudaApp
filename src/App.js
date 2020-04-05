@@ -15,6 +15,8 @@ import axios from "axios";
 
 import store from "./store";
 
+import Blog from "./Page/Blog/Blog";
+
 axios.defaults.baseURL = "http://localhost:3000";
 
 class App extends React.Component {
@@ -51,7 +53,7 @@ class App extends React.Component {
             <Route path="/" exact component={Home} />
             <Route path="/doniraj" exact component={Home} />
             <Route path="/vijesti" exact component={Home} />
-            <Route path="/blog" exact component={Home} />
+            <Route path="/blog" exact component={Blog} />
             <Route path="/galerija" exact component={Home} />
             <Route path="/prijatelji" exact component={Home} />
             <Route path="/onama" exact component={Home} />
