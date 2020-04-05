@@ -1,100 +1,204 @@
-.blog {
-    background-color: white;
-    margin-bottom: 150px;
-    margin-top: -50px;
+.blog-wrapper-div {
+    
+    margin-bottom: 4%;
+    margin-top: 1%;
+    .blog-post-div {
+        overflow: hidden;
+        padding-left: 7.34%;
+        padding-right: 7.34%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        border-bottom: 1px solid #EDEEF2;
+.blog-img {
+display: inline-block;
+vertical-align: top;
+width: 49.08%;
 }
 
-.blog .post {
-    overflow: hidden;
-    border-bottom: 1px solid #EDEEF2;
-    padding-left: 141px;
-    padding-right: 141px;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    }
-    
-.blog .post .text {
-    display: inline-block;
-    width: 45%;
-    margin-left: 80px;
-    padding-right: 150px;
-    }
+.blog-text-div {
+display: inline-block;
+width: 38.1%;
+margin-left: 4.33%;
 
-.blog .post .Slika {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    }
+.autor-div {
 
-.blog .post .text .autorSlika {
-    width: auto;
-    margin-bottom: 20px;
-    }
+width: auto;
+margin-bottom: 20px;
 
-.blog .post .text .autorSlika img  {
+img  {
     display: inline-block;
     vertical-align: top;
     width: 61px;
-    }
-
-    
-    .blog .post .text .autorSlika div .autorName {
-        text-transform: uppercase;
-        opacity: 0.85;
-        font-family: Muli;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 1.28;
-        letter-spacing: 3.6px;
-    color: #2e3038;
-    margin: 0;
 }
-.blog .post .text .autorSlika div {
+
+div {
     display: inline-block;
     margin: 10px 0 0 10px;
-    }
+.autor-name {
+text-transform: uppercase;
+opacity: 0.85;
+font-family: Muli;
+font-size: 18px;
+font-weight: 900;
+line-height: 1.28;
+letter-spacing: 3.6px;
+color: #2e3038;
+margin: 0;
+}
 
- .blog .post .text .autorSlika div .date {
-    font-family: Muli;
-    font-size: 14px;
-    color: #8b92ab;
-    font-weight: bold;
-    line-height: 1.29;
+.autor-date {
+opacity: 0.85;
+font-family: Muli;
+font-size: 14px;
+font-weight: bold;
+line-height: 1.29;
+color: #8b92ab;
+        }
     }
-                
- .blog .post .text .title {
+}
+
+.blog-heading {
     font-family: PlayfairDisplay;
+//         font-weight: 900;
+//         line-height: 1.28;
     font-size: 72px;
     font-weight: bold;
     line-height: 1.18;
     color: #2e3038;
     margin-bottom: 33px;
-    }
-.blog .post .text .button {
+}
+
+.blog-p {
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8b92ab;
+}
+
+.button-radius {
     margin-top: 20px;
+    background-color: white;
     color: #06aaca;
-    width: 180px;
     font-weight: 600;
     border: solid 1px #06aaca;
-    background-color: white;
-    }
+    width: 180px;
+}
 
-.blog .post .text .blogText {
-    font-family: 'Muli', sans-serif;
-    font-size: 18px;
-    color: #8b92ab;
-    line-height: 1.5;
-    }
-
-
-.blog .post .text .button:hover {
+.button-radius:hover {
     font-family: Muli, sans-serif;
     color: white;
     border: none;
-    outline: none;
-    transition: all .2s;
     background-color: #06aaca;
     cursor: pointer;
-    }
+    outline: none;
+    transition: all .2s;
+}
+}
+}
+}
+
+.add-button-radius {
+position: absolute;
+width: auto;
+padding-left: 20px;
+//     width: 180px;
+//     font-weight: 600;
+//     border: solid 1px #06aaca;
+//     background-color: white;
+padding-right: 20px;
+right: 50px;
+}
+// .blog {
+//     background-color: white;
+//     margin-bottom: 150px;
+//     margin-top: -50px;
+// }
+
+// .blog .post {
+//     overflow: hidden;
+//     border-bottom: 1px solid #EDEEF2;
+//     padding-left: 141px;
+//     padding-right: 141px;
+//     padding-top: 55px;
+//     padding-bottom: 55px;
+//     }
+    
+// .blog .post .text {
+//     display: inline-block;
+//     width: 45%;
+//     margin-left: 80px;
+//     padding-right: 150px;
+//     }
+
+// .blog .post .Slika {
+//     width: 49%;
+//     display: inline-block;
+//     vertical-align: top;
+//     }
+
+// .blog .post .text .autorSlika {
+//     width: auto;
+//     margin-bottom: 20px;
+//     }
+
+// .blog .post .text .autorSlika img {
+//     display: inline-block;
+//     vertical-align: top;
+//     width: 61px;
+//     }
+
+    
+//     .blog .post .text .autorSlika .autorName {
+//         text-transform: uppercase;
+//         opacity: 0.85;
+//         font-family: Muli;
+//         font-size: 18px;
+//         letter-spacing: 3.6px;
+//     color: #2e3038;
+//     margin: 0;
+// }
+// .blog .post .text .autorSlika {
+//     display: inline-block;
+//     margin: 10px 0 0 10px;
+//     }
+
+//  .blog .post .text .autorSlika  .date {
+//     font-family: Muli;
+//     font-size: 14px;
+//     color: #8b92ab;
+//     font-weight: bold;
+//     line-height: 1.29;
+//     }
+                
+//  .blog .post .text .title {
+//     font-family: PlayfairDisplay;
+//     font-size: 72px;
+//     font-weight: bold;
+//     line-height: 1.18;
+//     color: #2e3038;
+//     margin-bottom: 33px;
+//     }
+// .blog .post .text .button {
+//     margin-top: 20px;
+//     color: #06aaca;
+//     }
+
+// .blog .post .text .blogText {
+//     font-family: 'Muli', sans-serif;
+//     font-size: 18px;
+//     color: #8b92ab;
+//     line-height: 1.5;
+//     }
+
+
+// .blog .post .text .button:hover {
+//     font-family: Muli, sans-serif;
+//     color: white;
+//     border: none;
+//     outline: none;
+//     transition: all .2s;
+//     background-color: #06aaca;
+//     cursor: pointer;
+//     }
         
     

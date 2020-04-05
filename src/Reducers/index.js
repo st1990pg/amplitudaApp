@@ -1,11 +1,13 @@
 import { combineReducers } from "redux";
 import sliderReducer from "./sliderReducer";
 import aboutReducer from "./aboutReducer";
-import donirajReducer from "Reducers/donirajReducer";
+import donirajReducer from "./donirajReducer";
+import blogReducer from "./blogReducer";
 
 export default combineReducers({
   slider: sliderReducer,
   aboutUs: aboutReducer,
-  doniraj: donirajReducer
+  doniraj: donirajReducer,
+  postovi: blogReducer
 
 });

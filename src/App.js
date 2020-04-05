@@ -15,7 +15,7 @@ import axios from "axios";
 
 import store from "./store";
 
-import Blog from "./Page/Blog/Blog";
+import Blog from "./Page/Blog";
 
 axios.defaults.baseURL = "http://localhost:3000";
 
@@ -38,7 +38,7 @@ class App extends React.Component {
         >
           <Provider store={store}>
             <Layout />
-             <h1>{translate("hello", { bold: <span>Test test</span> })}</h1>
+             {/* <h1>{translate("hello", { bold: <span>Test test</span> })}</h1>
             <h1>{translate("hi")}</h1>
             <button onClick={() => this.setState({ locale: LOCALES.ENGLISH })}>
               ENGLISH
@@ -48,7 +48,7 @@ class App extends React.Component {
             </button>
             <button onClick={() => this.setState({ locale: LOCALES.SERBIAN })}>
               SERBIAN
-            </button>
+            </button> */}
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/doniraj" exact component={Home} />

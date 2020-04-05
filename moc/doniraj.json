@@ -25,58 +25,60 @@
       "img": "src/img/Happy-Children-Two.png"
     }
   ],
-
-
   "about": {
-    "items":
-      {
-   "text1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-    "text2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "title": "Ko smo mi?"
-  }
-
+    "items": {
+      "text1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "text2": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "title": "Ko smo mi?"
+    }
   },
-
-
-  "blogs": [
+  "blog": [
     {
       "id": 1,
-      "title": "Naslov bloga u dva reda, naslov bloga",
-      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
-      "Slika": "src/img/Happy-Children.png",
-
-      "autor": {
-        "autorSlika": "src/img/Happy-Children.png",
-        "autorName": "Milica Markovic",
-        "date": "12.02.2019."
+      "post": {
+        "img": "src/img/Happy-Children.png",
+        "text": {
+          "title": "Naslov bloga u dva reda, naslov bloga",
+          "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna..."
+        },
+        "author": {
+          "name": "Petar Petrović",
+          "date": "12.02.2019",
+          "img": "src/img/autor.png"
+        }
       }
     },
     {
       "id": 2,
-      "title": "Naslov bloga test 2",
-      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
-      "Slika": "src/img/Happy-Children.png",
-
-      "autor": {
-        "autorSlika": "src/img/Happy-Children.png",
-        "autorName": "Milica Markovic",
-        "date": "12.02.2019."
+      "post": {
+        "img": "src/img/Happy-Children-two.png",
+        "text": {
+          "title": "Naslov bloga test 2",
+          "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna..."
+        },
+        "author": {
+          "name": "Petar Petrović",
+          "date": "12.02.2019",
+          "img": "src/img/autor.png"
+        }
       }
     },
     {
       "id": 3,
-      "title": "Naslov bloga tet 3",
-      "text": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
-      "Slika": "src/img/Happy-Children.png",
-
-      "autor": {
-        "autorSlika": "src/img/Happy-Children.png",
-        "autorName": "Milica Markovic",
-        "date": "12.02.2019."
+      "post": {
+        "img": "src/img/poklon.png",
+        "text": {
+          "title": "Naslov bloga test 3",
+          "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna..."
+        },
+        "author": {
+          "name": "Petar Petrović",
+          "date": "12.02.2019",
+          "img": "src/img/autor.png"
+        }
       }
     }
   ],
-  
   "informacije": {
     "Person": {
       "name": "Marija Bujisic",
@@ -141,5 +143,41 @@
         }
       }
     ]
-  }
+  },
+  "posts": [
+    {
+      "title": "Naslov bloga test 3",
+      "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/autor.png"
+      },
+      "date": "12.02.2019.",
+      "id": 3
+    },
+    {
+      "title": "Naslov bloga test 2",
+      "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/autor.png"
+      },
+      "date": "12.02.2019.",
+      "id": 2
+    },
+    {
+      "title": "Naslov bloga u dva reda, naslov bloga",
+      "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/autor.png"
+      },
+      "date": "12.02.2019.",
+      "id": 1
+    }
+   
+  ]
 }
