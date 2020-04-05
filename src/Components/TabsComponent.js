@@ -79,7 +79,7 @@ function VerticalTabs(props) {
   const myRef = useRef();
   const wrongRef = useRef();
   useEffect(() => myRef.current && myRef.current.focus(), []);
-  useEffect(() => wrongRef.current && wrongRef.current.focus(), []); // Imao sam problem sa ternarim operatorom pa sam napravio isti ref koji se nikad ne koristi
+  useEffect(() => wrongRef.current && wrongRef.current.focus(), []); // Imao sam problem sa ternarnim operatorom pa sam napravio isti ref koji se nikad ne koristi
   const labelValues = doniraj.map(doniraj => (
     <ul className="label-ul">
       {doniraj.items.map(sub => {

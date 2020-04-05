@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Layout from "Components/Header/Layout";
 import Home from "./Page/Home";
 import Footer from "Components/Footer/Footer";
+import Blog from './Page/Blog';
+import Donate from "./Page/Donate/Donate";
 
 import { IntlProvider, FormattedMessage } from "react-intl";
 import { LOCALES } from "./i18n/constants";
@@ -14,8 +16,6 @@ import { Provider } from "react-redux";
 import axios from "axios";
 
 import store from "./store";
-import Donate from "./Page/Donate/Donate";
-import Blog from './Page/Blog/Blog';
 
 axios.defaults.baseURL = "http://localhost:3000";
 

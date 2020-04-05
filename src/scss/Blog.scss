@@ -1,11 +1,7 @@
 .blog-wrapper-div {
     
-    
-
-    
     margin-bottom: 4%;
     margin-top: 1%;
-
     .blog-post-div {
         overflow: hidden;
         padding-left: 7.34%;
@@ -13,7 +9,7 @@
         padding-top: 2.5%;
         padding-bottom: 2.5%;
         border-bottom: 1px solid #EDEEF2;
-        .autor-img {
+        .blog-img {
             display: inline-block;
             vertical-align: top;
             width: 49.08%;
@@ -97,4 +93,12 @@
             }
         }
     }
+}
+
+.add-button-radius {
+    position: absolute;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 50px;
 }

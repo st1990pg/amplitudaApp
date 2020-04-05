@@ -33,3 +33,7 @@ export const ContactUs = ContactUsComponent;
 //Tabs component
 import TabsComponent from "./TabsComponent";
 export const Tabs = TabsComponent;
+
+//TextArea Component
+import TextAreaComponent from "../TextAreaComponent";
+export const TextArea = TextAreaComponent;

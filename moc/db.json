@@ -4,6 +4,39 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "Nas",
+      "body": "Tekst bloga bilo sta\n\n",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 2
+    },
+    {
+      "title": "Naslov bloga u dva reda, naslov bloga",
+      "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 3
+    },
+    {
+      "title": "Naslov bloga test 2",
+      "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna...",
+      "img": "src/img/Happy-Children.png",
+      "author": {
+        "name": "Milica Markovic",
+        "avatar": "src/img/Happy-Children.png"
+      },
+      "date": "30.03.2020",
+      "id": 4
     }
   ],
   "comments": [
